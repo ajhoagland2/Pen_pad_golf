@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>C-011 From a blank page — static origin story</title>
+  <style>
+    @font-face { font-family:"Playfair Display"; src:url("fonts/PlayfairDisplay-SemiBold.ttf"); font-weight:600; }
+    @font-face { font-family:"DM Sans"; src:url("fonts/DMSans-SemiBold.ttf"); font-weight:600; }
+    @font-face { font-family:"DM Sans"; src:url("fonts/DMSans-Bold.ttf"); font-weight:700; }
+    :root { --paper:#f7f1e4; --ink:#193225; --green:#31543b; --olive:#667a47; --gold:#9b7319; --rust:#9c3f2c; }
+    * { box-sizing:border-box; }
+    html,body { margin:0; background:#151a16; }
+    body { display:grid; gap:40px; padding:40px; }
+    .slide { position:relative; width:1080px; height:1350px; overflow:hidden; background:var(--paper); color:var(--ink); isolation:isolate; }
+    .media { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .mark { position:absolute; z-index:5; right:62px; top:58px; width:214px; padding:16px 18px; background:rgba(247,241,228,.96); border:2px solid rgba(25,50,37,.28); }
+    .mark img { display:block; width:100%; }
+    .eyebrow { margin:0 0 20px; color:var(--rust); font:700 27px/1 "DM Sans",sans-serif; letter-spacing:.14em; text-transform:uppercase; }
+    h1,h2 { margin:0; font:600 80px/1.03 "Playfair Display",serif; letter-spacing:-.038em; }
+    p { margin:0; }
+    .hook::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(25,50,37,0) 0 50%,rgba(25,50,37,.96) 82% 100%); }
+    .hook-copy { position:absolute; z-index:3; left:72px; right:72px; bottom:70px; color:var(--paper); }
+    .hook-copy .eyebrow { color:#d8b25d; }
+    .hook-copy h1 { max-width:920px; font-size:77px; }
+    .hook-copy .dek { margin-top:22px; color:#e6e2ca; font:600 34px/1.22 "DM Sans",sans-serif; }
+    .story { display:grid; grid-template-rows:835px 1fr; }
+    .story .image-wrap { position:relative; overflow:hidden; background:#ded5c2; }
+    .story .image-wrap img { width:100%; height:100%; object-fit:cover; object-position:center top; }
+    .story .body { position:relative; padding:52px 72px 64px; background:radial-gradient(circle at 90% 12%,rgba(155,115,25,.12),transparent 34%),var(--paper); }
+    .story h2 { max-width:890px; font-size:72px; }
+    .story .dek { margin-top:22px; max-width:880px; color:var(--green); font:700 32px/1.27 "DM Sans",sans-serif; }
+    .play .body { background:radial-gradient(circle at 12% 82%,rgba(102,122,71,.22),transparent 35%),var(--ink); color:var(--paper); }
+    .play .image-wrap img { object-position:center bottom; }
+    .play .eyebrow { color:#d8b25d; }
+    .play .dek { color:#d5dcbf; }
+    .finish { background:url("assets/c011-art-4-share.png") center/cover no-repeat; }
+    .finish::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(25,50,37,0) 0 54%,rgba(25,50,37,.78) 100%); }
+    .finish-panel { position:absolute; z-index:2; left:72px; right:72px; bottom:68px; padding:38px 50px 46px; text-align:center; background:rgba(247,241,228,.96); border:2px solid rgba(25,50,37,.24); box-shadow:0 18px 50px rgba(25,50,37,.18); }
+    .finish .primary { display:block; width:410px; height:226px; object-fit:contain; margin:-30px auto -32px; }
+    .finish h2 { font-size:68px; }
+    .finish .dek { margin:20px auto 0; max-width:720px; color:var(--green); font:700 30px/1.22 "DM Sans",sans-serif; }
+    .cta-row { display:flex; justify-content:center; align-items:center; gap:22px; margin-top:28px; }
+    .cta { padding:20px 34px 23px; background:var(--green); color:white; border:3px solid var(--olive); font:700 31px/1 "DM Sans",sans-serif; }
+    .disclosure { padding:12px 18px 14px; background:var(--paper); color:var(--rust); border:2px solid rgba(156,63,44,.4); font:700 22px/1.2 "DM Sans",sans-serif; letter-spacing:.11em; text-transform:uppercase; }
+  </style>
+</head>
+<body>
+  <section class="slide hook" id="slide-1">
+    <img class="media" src="assets/c011-art-1-blank-page.png" alt="Cream paper becoming a watercolor tabletop golf course on a warm worktable" />
+    <div class="mark"><img src="../../assets/brand/pen-pad-golf-logo-mark-760x360.png" alt="Pen Pad Golf compact Flickline mark" /></div>
+    <div class="hook-copy"><p class="eyebrow">From a blank page</p><h1>What if a round could begin here?</h1><p class="dek">A pen. A printed course. A new way to play.</p></div>
+  </section>
+  <section class="slide story" id="slide-2">
+    <div class="image-wrap"><img src="assets/c011-art-2-workshop.png" alt="Watercolor course design progressing from graphite lines to painted fairway" /></div>
+    <div class="body"><p class="eyebrow">The idea takes shape</p><h2>A course appears on paper.</h2><p class="dek">Watercolor fairways, paper texture, and one clear path to the flag.</p></div>
+  </section>
+  <section class="slide story play" id="slide-3">
+    <div class="image-wrap"><img src="assets/c011-art-3-play.png" alt="Upright navy pen in the tee box of a watercolor printed course" /></div>
+    <div class="body"><p class="eyebrow">Then the pen stands up</p><h2>Now the round can begin.</h2><p class="dek">Start in the tee box. Flick toward the hole.</p></div>
+  </section>
+  <section class="slide finish" id="slide-4">
+    <div class="finish-panel"><img class="primary" src="../../assets/brand/pen-pad-golf-logo-primary-1080.png" alt="Founder-approved Pen Pad Golf Flickline lockup" /><p class="eyebrow">Stand it. Flick it. Mark it.</p><h2>Every landing is one stroke.</h2><p class="dek">Mark the landing and keep playing. Lowest score wins.</p><div class="cta-row"><div class="cta">SEE HOW TO PLAY</div><div class="disclosure">In development</div></div></div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>C-013 Pick your line — static carousel</title>
+  <style>
+    @font-face { font-family:"Playfair Display"; src:url("fonts/PlayfairDisplay-SemiBold.ttf"); font-weight:600; }
+    @font-face { font-family:"DM Sans"; src:url("fonts/DMSans-SemiBold.ttf"); font-weight:600; }
+    @font-face { font-family:"DM Sans"; src:url("fonts/DMSans-Bold.ttf"); font-weight:700; }
+    :root { --paper:#f7f1e4; --ink:#193225; --green:#31543b; --olive:#667a47; --gold:#9b7319; --rust:#9c3f2c; }
+    * { box-sizing:border-box; }
+    html,body { margin:0; background:#151a16; }
+    body { display:grid; gap:40px; padding:40px; }
+    .slide { position:relative; width:1080px; height:1350px; overflow:hidden; background:var(--paper); color:var(--ink); isolation:isolate; }
+    .mark { position:absolute; z-index:6; right:58px; top:52px; width:208px; padding:14px 17px; background:rgba(247,241,228,.96); border:2px solid rgba(25,50,37,.28); }
+    .mark img { display:block; width:100%; }
+    .eyebrow { margin:0 0 18px; color:var(--rust); font:700 27px/1 "DM Sans",sans-serif; letter-spacing:.14em; text-transform:uppercase; }
+    h1,h2 { margin:0; font:600 78px/1.03 "Playfair Display",serif; letter-spacing:-.038em; }
+    p { margin:0; }
+    .hook img.course { width:100%; height:100%; object-fit:cover; object-position:center 38%; transform:scale(1.12); }
+    .hook::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(25,50,37,.03) 0 35%,rgba(25,50,37,.96) 77% 100%); }
+    .hook-copy { position:absolute; z-index:4; left:72px; right:72px; bottom:68px; color:var(--paper); }
+    .hook-copy .eyebrow { color:#d8b25d; }
+    .hook-copy h1 { max-width:870px; font-size:82px; }
+    .hook-copy .dek { margin-top:20px; color:#e6e2ca; font:600 32px/1.24 "DM Sans",sans-serif; }
+    .gallery { display:grid; grid-template-rows:900px 1fr; }
+    .duo { display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:0 12px 12px; background:var(--ink); overflow:hidden; }
+    .duo img { width:100%; height:100%; object-fit:cover; object-position:center 48%; transform:scale(1.22); }
+    .upright-pen { position:absolute; z-index:4; left:414px; top:642px; width:26px; height:216px; border-radius:13px 13px 7px 7px; background:linear-gradient(90deg,#0d2635 0 22%,#24475d 45%,#0a202d 80% 100%); border:2px solid rgba(8,25,35,.65); box-shadow:0 14px 20px rgba(25,50,37,.28); transform:rotate(-3deg); transform-origin:bottom center; }
+    .upright-pen::before { content:""; position:absolute; left:4px; right:4px; top:24px; height:5px; background:#9b7319; border-radius:4px; }
+    .upright-pen::after { content:""; position:absolute; left:7px; bottom:-13px; width:10px; height:20px; background:#152f40; clip-path:polygon(0 0,100% 0,50% 100%); }
+    .pen-shadow { position:absolute; z-index:3; left:398px; top:842px; width:58px; height:20px; border-radius:50%; background:rgba(25,50,37,.28); filter:blur(2px); }
+    .paper-copy { position:relative; padding:42px 72px 50px; background:radial-gradient(circle at 92% 18%,rgba(155,115,25,.13),transparent 34%),var(--paper); }
+    .paper-copy h2 { font-size:66px; }
+    .paper-copy .dek { margin-top:17px; color:var(--green); font:700 30px/1.22 "DM Sans",sans-serif; }
+    .landing { display:grid; grid-template-rows:910px 1fr; background:var(--ink); color:var(--paper); }
+    .landing .image-wrap { position:relative; overflow:hidden; background:var(--paper); }
+    .landing .image-wrap img { width:100%; height:100%; object-fit:cover; object-position:center 39%; transform:scale(1.12); }
+    .landing-trail { position:absolute; z-index:4; inset:0; width:100%; height:100%; pointer-events:none; }
+    .landing .dark-copy { padding:42px 72px 50px; background:radial-gradient(circle at 12% 82%,rgba(102,122,71,.28),transparent 35%),var(--ink); }
+    .landing .eyebrow { color:#d8b25d; }
+    .landing h2 { font-size:64px; }
+    .landing .dek { margin-top:17px; color:#d5dcbf; font:700 29px/1.22 "DM Sans",sans-serif; }
+    .finish { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:10px; padding:10px; background:var(--ink); }
+    .finish .tile { overflow:hidden; }
+    .finish .tile img { width:100%; height:100%; object-fit:cover; object-position:center 42%; transform:scale(1.12); }
+    .finish::after { content:""; position:absolute; inset:0; background:rgba(25,50,37,.48); }
+    .finish-panel { position:absolute; z-index:3; left:72px; right:72px; top:250px; padding:34px 48px 42px; text-align:center; background:rgba(247,241,228,.97); border:2px solid rgba(25,50,37,.28); box-shadow:0 22px 60px rgba(25,50,37,.32); }
+    .finish .primary { display:block; width:390px; height:212px; object-fit:contain; margin:-28px auto -34px; }
+    .finish h2 { font-size:66px; }
+    .finish .dek { margin:18px auto 0; max-width:760px; color:var(--green); font:700 29px/1.22 "DM Sans",sans-serif; }
+    .cta-row { display:flex; justify-content:center; align-items:center; gap:20px; margin-top:26px; }
+    .cta { padding:19px 32px 22px; background:var(--green); color:white; border:3px solid var(--olive); font:700 30px/1 "DM Sans",sans-serif; }
+    .disclosure { padding:12px 17px 14px; background:var(--paper); color:var(--rust); border:2px solid rgba(156,63,44,.4); font:700 21px/1.2 "DM Sans",sans-serif; letter-spacing:.11em; text-transform:uppercase; }
+  </style>
+</head>
+<body>
+  <section class="slide hook" id="slide-1">
+    <img class="course" src="assets/c013-course-02-classic.jpg" alt="Illustrated printed golf course bending around blue water toward a rust-red flag" />
+    <div class="mark"><img src="../../assets/brand/pen-pad-golf-logo-mark-760x360.png" alt="Pen Pad Golf compact Flickline mark" /></div>
+    <div class="hook-copy"><p class="eyebrow">Read the course</p><h1>Which line would you take?</h1><p class="dek">Start in the tee box. Flick toward the hole.</p></div>
+  </section>
+  <section class="slide gallery" id="slide-2">
+    <div class="duo"><img src="assets/c013-course-01-classic.jpg" alt="Illustrated narrow printed golf course with bunkers, a tee box, an upright navy pen, and a flag" /><img src="assets/c013-course-03-classic.jpg" alt="Illustrated printed golf course with water, trees, bunkers, and a flag" /><span class="pen-shadow" aria-hidden="true"></span><span class="upright-pen" aria-hidden="true"></span></div>
+    <div class="paper-copy"><p class="eyebrow">A pen and a printed course</p><h2>Stand it. Flick it. Mark it.</h2><p class="dek">A little golf. A lot of fun.</p></div>
+  </section>
+  <section class="slide landing" id="slide-3">
+    <div class="image-wrap"><img src="assets/c013-course-04-classic.jpg" alt="Illustrated printed golf course curving past water and bunkers toward a flag, with three navy landing marks crossing the fairway" /><svg class="landing-trail" viewBox="0 0 1080 910" aria-hidden="true"><path d="M620 790 C600 685 548 615 520 520 S500 355 430 245" fill="none" stroke="#f7f1e4" stroke-width="8" stroke-linecap="round" stroke-dasharray="12 22" opacity=".92"/><g fill="#24475d" stroke="#f7f1e4" stroke-width="8"><circle cx="620" cy="790" r="19"/><circle cx="520" cy="520" r="19"/><circle cx="430" cy="245" r="19"/></g><g fill="#f7f1e4" font-family="DM Sans, sans-serif" font-size="18" font-weight="700" text-anchor="middle"><text x="620" y="796">1</text><text x="520" y="526">2</text><text x="430" y="251">3</text></g></svg></div>
+    <div class="dark-copy"><p class="eyebrow">Play from the landing</p><h2>Every mark is one stroke.</h2><p class="dek">Continue from the new mark until you reach the hole.</p></div>
+  </section>
+  <section class="slide finish" id="slide-4">
+    <div class="tile"><img src="assets/c013-course-01-classic.jpg" alt="Course illustration detail" /></div><div class="tile"><img src="assets/c013-course-02-classic.jpg" alt="Course illustration detail" /></div><div class="tile"><img src="assets/c013-course-03-classic.jpg" alt="Course illustration detail" /></div><div class="tile"><img src="assets/c013-course-04-classic.jpg" alt="Course illustration detail" /></div>
+    <div class="finish-panel"><img class="primary" src="../../assets/brand/pen-pad-golf-logo-primary-1080.png" alt="Founder-approved Pen Pad Golf Flickline lockup" /><p class="eyebrow">Pick a line. Play the hole.</p><h2>Lowest score wins.</h2><p class="dek">See how a round works, one flick at a time.</p><div class="cta-row"><div class="cta">SEE HOW TO PLAY</div><div class="disclosure">In development</div></div></div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ajhoagland2/pen-pad-golf-workspace/schemas/work-item.schema.json",
+  "title": "Pen Pad Golf agent work item",
+  "type": "object",
+  "required": ["id", "title", "owner", "status", "approval", "evidence"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[A-Z]+-[0-9]{3,}$" },
+    "title": { "type": "string", "minLength": 3 },
+    "owner": { "enum": ["Marketing Agent", "Sales Agent", "Brand Agent", "Purchasing Agent", "Distribution Agent", "Business Manager"] },
+    "status": { "enum": ["Backlog", "Agent working", "Agent review", "Brand review", "Founder approval", "Approved execution", "Verification", "Blocked external", "Done"] },
+    "approval": {
+      "type": "object",
+      "required": ["required", "status"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "status": { "enum": ["Not required", "Pending", "Approved", "Changes requested", "Declined", "Superseded", "Expired"] },
+        "commit": { "type": ["string", "null"] },
+        "artifactHashes": { "type": "array", "items": { "type": "string" } },
+        "expiresAt": { "type": ["string", "null"], "format": "date-time" }
+      }
+    },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "externalAction": { "type": ["string", "null"] },
+    "blockedReason": { "type": ["string", "null"] }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>C-009 How-to static carousel</title>
+  <style>
+    @font-face { font-family: "Playfair Display"; src: url("fonts/PlayfairDisplay-SemiBold.ttf"); font-weight: 600; }
+    @font-face { font-family: "DM Sans"; src: url("fonts/DMSans-SemiBold.ttf"); font-weight: 600; }
+    @font-face { font-family: "DM Sans"; src: url("fonts/DMSans-Bold.ttf"); font-weight: 700; }
+    :root { --paper:#f7f1e4; --ink:#193225; --green:#31543b; --olive:#667a47; --gold:#9b7319; --rust:#9c3f2c; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: #151a16; }
+    body { display: grid; gap: 40px; padding: 40px; }
+    .slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: var(--paper); color: var(--ink); isolation: isolate; }
+    .paper { background: radial-gradient(circle at 16% 10%, rgba(155,115,25,.09), transparent 34%), radial-gradient(circle at 84% 88%, rgba(49,84,59,.09), transparent 36%), var(--paper); }
+    .media { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .mark { position:absolute; z-index:4; right:62px; top:58px; width:214px; padding:16px 18px; background:rgba(247,241,228,.95); border:2px solid rgba(25,50,37,.28); }
+    .mark img { display:block; width:100%; }
+    .eyebrow { margin:0 0 24px; color:var(--rust); font:700 28px/1 "DM Sans", sans-serif; letter-spacing:.14em; text-transform:uppercase; }
+    h1, h2 { margin:0; font:600 90px/1.01 "Playfair Display", serif; letter-spacing:-.038em; }
+    p { margin:0; }
+    .hook .media { object-position:center; }
+    .hook::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(25,50,37,.03) 0 35%, rgba(25,50,37,.94) 77% 100%); }
+    .hook-copy { position:absolute; z-index:3; left:72px; right:72px; bottom:76px; color:var(--paper); }
+    .hook-copy h1 { font-size:86px; }
+    .hook-copy p:last-child { margin-top:24px; color:#e6e2ca; font:600 36px/1.22 "DM Sans",sans-serif; }
+    .step { display:grid; grid-template-columns:1fr; grid-template-rows:565px 1fr; }
+    .step .image-wrap { position:relative; overflow:hidden; background:#dfd7c5; }
+    .step .image-wrap img { width:100%; height:100%; object-fit:cover; }
+    .step .body { position:relative; padding:58px 72px 74px; }
+    .number { position:absolute; right:66px; top:40px; color:rgba(155,115,25,.22); font:700 150px/1 "DM Sans",sans-serif; }
+    .step h2 { position:relative; z-index:2; max-width:820px; font-size:82px; }
+    .step .dek { position:relative; z-index:2; margin-top:30px; max-width:850px; color:var(--green); font:700 38px/1.24 "DM Sans",sans-serif; }
+    .start .image-wrap img { object-position:center 15%; }
+    .flick { background:var(--ink); color:var(--paper); }
+    .flick .image-wrap img { object-position:center 56%; }
+    .flick .body { background:var(--ink); }
+    .flick .eyebrow { color:#d8b25d; }
+    .flick .dek { color:#d5dcbf; }
+    .mark-step { background:var(--paper); }
+    .mark-step .image-wrap img { object-position:center 52%; }
+    .finish { display:grid; place-items:center; padding:78px 78px 84px; text-align:center; }
+    .finish .primary { width:650px; height:650px; object-fit:contain; margin-top:-86px; }
+    .finish .eyebrow { margin-top:-58px; }
+    .finish h2 { margin-top:0; font-size:82px; }
+    .finish .dek { margin:28px auto 0; max-width:760px; color:var(--green); font:700 36px/1.2 "DM Sans",sans-serif; }
+    .cta { margin:38px auto 0; width:max-content; padding:26px 46px 30px; background:var(--green); color:white; border:3px solid var(--olive); font:700 38px/1 "DM Sans",sans-serif; }
+    .disclosure { position:absolute; left:70px; right:70px; bottom:50px; color:var(--rust); font:700 25px/1.2 "DM Sans",sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+  </style>
+</head>
+<body>
+  <section class="slide hook" id="slide-1">
+    <img class="media" src="../../PPG_site/assets/pen-pad-golf-demo-poster.jpg" alt="Approved Pen Pad Golf demonstration still" />
+    <div class="mark"><img src="../../assets/brand/pen-pad-golf-logo-mark-760x360.png" alt="Pen Pad Golf compact mark" /></div>
+    <div class="hook-copy"><p class="eyebrow">How to play</p><h1>A whole round of golf starts with a pen.</h1><p>Swipe for the four-step version.</p></div>
+  </section>
+  <section class="slide paper step start" id="slide-2">
+    <div class="image-wrap"><img src="file:///C:/Users/hoagl/Documents/PPG_Course_Map/PPG_rules_09_06_2026.png" alt="Owned Pen Pad Golf rules artwork" /></div>
+    <div class="body"><div class="number">1</div><p class="eyebrow">Step one</p><h2>Start in the tee box.</h2><p class="dek">Stand the pen upright to begin the hole.</p></div>
+  </section>
+  <section class="slide step flick" id="slide-3">
+    <div class="image-wrap"><img src="../../PPG_site/assets/pen-pad-golf-demo-poster.jpg" alt="Approved real Pen Pad Golf demonstration still" /></div>
+    <div class="body"><div class="number">2</div><p class="eyebrow">Step two</p><h2>Flick toward the hole.</h2><p class="dek">Give the upright pen a flick toward the hole.</p></div>
+  </section>
+  <section class="slide paper step mark-step" id="slide-4">
+    <div class="image-wrap"><img src="file:///C:/Users/hoagl/Documents/PPG_Course_Map/18_Course_V01_09_06_2026/Course_01_Classic.jpg" alt="Owned Classic Pen Pad Golf course artwork" /></div>
+    <div class="body"><div class="number">3</div><p class="eyebrow">Steps three + four</p><h2>Mark the landing.</h2><p class="dek">Count one stroke. Keep going from the new mark.</p></div>
+  </section>
+  <section class="slide paper finish" id="slide-5">
+    <div><img class="primary" src="../../assets/brand/pen-pad-golf-logo-primary-1080.png" alt="Founder-approved Pen Pad Golf Flickline lockup" /><p class="eyebrow">Finish the round</p><h2>Lowest score wins.</h2><p class="dek">A little golf. A lot of fun.</p><div class="cta">SEE HOW TO PLAY</div></div>
+    <div class="disclosure">In development</div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,63 @@
+name: Agent work
+description: Create accountable Pen Pad Golf work with evidence and approval gates.
+title: "[WORK] "
+labels: ["agent-work", "status:backlog"]
+body:
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Owning agent
+      options:
+        - Marketing Agent
+        - Sales Agent
+        - Brand Agent
+        - Purchasing Agent
+        - Distribution Agent
+        - Business Manager
+    validations:
+      required: true
+  - type: dropdown
+    id: action
+    attributes:
+      label: Action type
+      options:
+        - Internal
+        - Publish
+        - Spend
+        - Price
+        - Refund exception
+        - Product claim
+        - Inventory
+        - Account security
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Required outcome
+      description: State the completed outcome, not merely the activity.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and exact artifacts
+      description: Include repository paths, commit or PR, external non-secret links, and hashes where approval applies to exported assets.
+    validations:
+      required: true
+  - type: textarea
+    id: gates
+    attributes:
+      label: Approval gates and risks
+      description: Identify Brand, founder, security, inventory, fulfillment, or external-system gates.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: No credentials, private customer data, payment data, recovery codes, or other secrets are included.
+          required: true
+        - label: Any requested approval is scoped to the exact action and evidence above.
+          required: true

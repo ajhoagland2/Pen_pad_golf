@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>C-006 Product facts carousel</title>
+  <style>
+    @font-face { font-family: "Playfair Display"; src: url("fonts/PlayfairDisplay-SemiBold.ttf"); font-weight: 600; }
+    @font-face { font-family: "DM Sans"; src: url("fonts/DMSans-SemiBold.ttf"); font-weight: 600; }
+    @font-face { font-family: "DM Sans"; src: url("fonts/DMSans-Bold.ttf"); font-weight: 700; }
+    :root { --paper:#f7f1e4; --ink:#193225; --green:#31543b; --olive:#667a47; --gold:#9b7319; --rust:#9c3f2c; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: #181c19; }
+    body { display: grid; gap: 40px; padding: 40px; }
+    .slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: var(--paper); color: var(--ink); isolation: isolate; }
+    .media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(25,50,37,.06), rgba(25,50,37,.12)); }
+    .panel { position: absolute; z-index: 2; left: 68px; right: 68px; padding: 48px 54px 52px; background: rgba(247,241,228,.96); border: 3px solid var(--green); box-shadow: 0 18px 42px rgba(25,50,37,.22); }
+    .top { top: 72px; }
+    .bottom { bottom: 72px; }
+    .kicker { margin: 0 0 17px; color: var(--rust); font: 700 28px/1 "DM Sans", sans-serif; letter-spacing: .13em; text-transform: uppercase; }
+    h1, h2 { margin: 0; font-family: "Playfair Display", serif; font-weight: 600; letter-spacing: -.035em; }
+    h1 { font-size: 88px; line-height: .98; }
+    h2 { font-size: 74px; line-height: 1.02; }
+    .dek { margin: 24px 0 0; color: var(--green); font: 700 38px/1.15 "DM Sans", sans-serif; }
+    .rule { width: 150px; height: 7px; margin-top: 28px; background: var(--gold); }
+    .wordmark { position: absolute; z-index: 3; top: 38px; left: 44px; padding: 12px 20px 14px; background: rgba(247,241,228,.94); border: 2px solid var(--green); font: 600 28px/1 "Playfair Display", serif; }
+    .mechanic { position: absolute; z-index: 3; left: 70px; right: 70px; bottom: 72px; padding: 38px 44px 42px; background: rgba(25,50,37,.95); color: var(--paper); text-align: center; }
+    .mechanic strong { display: block; font: 700 64px/1.02 "DM Sans", sans-serif; letter-spacing: -.025em; }
+    .mechanic span { display: block; margin-top: 18px; color: #d7dfc1; font: 600 29px/1.25 "DM Sans", sans-serif; }
+    .stills { display: grid; grid-template-columns: repeat(3, 1fr); height: 880px; border-bottom: 7px solid var(--gold); }
+    .still { position: relative; overflow: hidden; border-right: 5px solid var(--paper); }
+    .still:last-child { border-right: 0; }
+    .still video { width: 100%; height: 100%; object-fit: cover; }
+    .step { position: absolute; z-index: 2; top: 28px; left: 28px; width: 64px; height: 64px; display: grid; place-items: center; border-radius: 50%; background: var(--rust); color: white; font: 700 29px/1 "DM Sans", sans-serif; }
+    .score-copy { padding: 55px 70px 0; text-align: center; }
+    .score-copy h2 { font-size: 69px; }
+    .score-copy p { margin: 22px 0 0; color: var(--green); font: 700 35px/1.15 "DM Sans", sans-serif; }
+    .facts { display: grid; gap: 24px; margin-top: 30px; }
+    .fact { display: grid; grid-template-columns: 260px 1fr; gap: 24px; align-items: center; padding: 25px 28px; background: rgba(247,241,228,.97); border-left: 8px solid var(--gold); }
+    .fact b { color: var(--rust); font: 700 24px/1.1 "DM Sans", sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+    .fact span { font: 700 34px/1.1 "DM Sans", sans-serif; }
+    .closing .media { object-position: center 48%; }
+    .closing::after { content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(247,241,228,.97) 0 30%, transparent 49% 62%, rgba(25,50,37,.96) 82% 100%); }
+    .closing-copy { position: relative; z-index: 2; padding: 78px 74px; text-align: center; }
+    .closing-copy h2 { font-size: 84px; }
+    .cta { position: absolute; z-index: 3; left: 170px; right: 170px; bottom: 126px; padding: 29px 34px 32px; background: var(--olive); border: 3px solid #d7dfc1; color: white; font: 700 43px/1 "DM Sans", sans-serif; text-align: center; }
+    .disclosure { position: absolute; z-index: 3; left: 60px; right: 60px; bottom: 54px; color: var(--paper); font: 700 26px/1.2 "DM Sans", sans-serif; text-align: center; letter-spacing: .08em; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <section class="slide" id="slide-1">
+    <img class="media" src="../../PPG_site/assets/pen-pad-golf-cover-hero.png" alt="Approved Pen Pad Golf cover art" />
+    <div class="shade"></div>
+    <div class="panel top"><p class="kicker">Product facts</p><h1>What is Pen Pad Golf?</h1><p class="dek">Tabletop golf played with a pen.</p><div class="rule"></div></div>
+  </section>
+  <section class="slide" id="slide-2">
+    <img class="media" src="../../PPG_site/assets/pen-pad-golf-demo-poster.jpg" alt="Real Pen Pad Golf demonstration poster" />
+    <div class="wordmark">Pen Pad Golf</div>
+    <div class="mechanic"><strong>Stand it. Flick it. Mark it.</strong><span>Start in the tee box and flick toward the hole.</span></div>
+  </section>
+  <section class="slide" id="slide-3">
+    <div class="stills">
+      <div class="still"><video muted playsinline preload="auto" src="../../PPG_site/assets/pen-pad-golf-demo.mp4"></video><span class="step">1</span></div>
+      <div class="still"><video muted playsinline preload="auto" src="../../PPG_site/assets/pen-pad-golf-demo.mp4"></video><span class="step">2</span></div>
+      <div class="still"><video muted playsinline preload="auto" src="../../PPG_site/assets/pen-pad-golf-demo.mp4"></video><span class="step">3</span></div>
+    </div>
+    <div class="score-copy"><p class="kicker">How scoring works</p><h2>Every landing = 1 stroke.</h2><p>Continue from the new mark. Lowest score wins.</p></div>
+  </section>
+  <section class="slide" id="slide-4">
+    <img class="media" src="../../PPG_site/assets/pen-pad-golf-cover-hero.png" alt="Approved Pen Pad Golf cover art" />
+    <div class="shade"></div>
+    <div class="panel bottom"><p class="kicker">At a glance</p><h2>Three product facts.</h2><div class="facts"><div class="fact"><b>Format</b><span>Printed tabletop golf game</span></div><div class="fact"><b>Target price</b><span>$12 per unit</span></div><div class="fact"><b>Planned channel</b><span>Etsy</span></div></div></div>
+  </section>
+  <section class="slide closing" id="slide-5">
+    <img class="media" src="../../PPG_site/assets/pen-pad-golf-cover-hero.png" alt="Approved Pen Pad Golf cover art" />
+    <div class="closing-copy"><p class="kicker">Pen Pad Golf</p><h2>A little golf.<br />A lot of fun.</h2></div>
+    <div class="cta">SEE PRODUCT DETAILS</div>
+    <div class="disclosure">In development</div>
+  </section>
+</body>
+</html>

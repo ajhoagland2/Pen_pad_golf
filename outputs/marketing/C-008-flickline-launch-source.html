@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>C-008 Flickline identity launch</title>
+  <style>
+    @font-face { font-family: "Playfair Display"; src: url("fonts/PlayfairDisplay-SemiBold.ttf"); font-weight: 600; }
+    @font-face { font-family: "DM Sans"; src: url("fonts/DMSans-SemiBold.ttf"); font-weight: 600; }
+    @font-face { font-family: "DM Sans"; src: url("fonts/DMSans-Bold.ttf"); font-weight: 700; }
+    :root { --paper:#f7f1e4; --ink:#193225; --green:#31543b; --olive:#667a47; --gold:#9b7319; --rust:#9c3f2c; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: #151a16; }
+    body { display: grid; gap: 40px; padding: 40px; }
+    .slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: var(--paper); color: var(--ink); isolation: isolate; }
+    .paper { background:
+      radial-gradient(circle at 18% 12%, rgba(155,115,25,.08), transparent 31%),
+      radial-gradient(circle at 82% 88%, rgba(49,84,59,.08), transparent 34%),
+      var(--paper); }
+    .eyebrow { margin: 0 0 24px; color: var(--rust); font: 700 29px/1 "DM Sans", sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+    h1, h2 { margin: 0; font: 600 92px/1.01 "Playfair Display", serif; letter-spacing: -.038em; }
+    p { margin: 0; }
+    .intro { display: grid; place-items: center; padding: 88px 80px 76px; text-align: center; }
+    .intro .primary { width: 860px; height: 860px; object-fit: contain; }
+    .intro h1 { margin-top: -34px; font-size: 67px; }
+    .intro .rule { width: 160px; height: 7px; margin: 34px auto 0; background: var(--gold); }
+    .media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(25,50,37,.02) 0 48%, rgba(25,50,37,.93) 76% 100%); }
+    .copy-bottom { position: absolute; z-index: 2; left: 74px; right: 74px; bottom: 76px; color: var(--paper); }
+    .copy-bottom h2 { font-size: 84px; }
+    .copy-bottom p { margin-top: 23px; max-width: 780px; color: #e4e4c9; font: 600 36px/1.2 "DM Sans", sans-serif; }
+    .signature { position: absolute; z-index: 3; right: 64px; top: 60px; width: 210px; padding: 18px 19px; background: rgba(247,241,228,.94); border: 2px solid rgba(25,50,37,.3); }
+    .signature img { display: block; width: 100%; }
+    .course .media { object-position: center 50%; }
+    .course::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(247,241,228,.96) 0 46%, rgba(247,241,228,.66) 58%, rgba(247,241,228,.04) 82%); }
+    .course-copy { position: relative; z-index: 2; width: 600px; padding: 98px 0 0 76px; }
+    .course-copy h2 { font-size: 94px; }
+    .course-copy .dek { margin-top: 34px; color: var(--green); font: 700 42px/1.18 "DM Sans", sans-serif; }
+    .course .mark { position:absolute; z-index:3; left:76px; bottom:78px; width:300px; }
+    .rules { background: var(--ink); }
+    .rules .media { left: 390px; width: 690px; object-position: 56% center; }
+    .rules::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg, var(--ink) 0 36%, rgba(25,50,37,.95) 42%, rgba(25,50,37,.14) 73%); }
+    .rules-copy { position: relative; z-index: 2; width: 550px; padding: 102px 0 0 76px; color: var(--paper); }
+    .rules-copy h2 { font-size: 82px; }
+    .rules-copy .steps { margin-top: 40px; display: grid; gap: 20px; font: 700 39px/1.13 "DM Sans", sans-serif; }
+    .rules-copy .steps span { color: #d5dcbf; }
+    .rules .signature { top:auto; right:auto; left:76px; bottom:78px; width:220px; }
+    .close { display:grid; place-items:center; padding:80px 84px; text-align:center; }
+    .close .primary { width: 700px; height: 700px; object-fit: contain; margin-top:-70px; }
+    .close h2 { margin-top:-80px; font-size:78px; }
+    .cta { margin-top:40px; padding:27px 45px 31px; background:var(--green); color:white; border:3px solid var(--olive); font:700 39px/1 "DM Sans", sans-serif; }
+    .disclosure { position:absolute; left:70px; right:70px; bottom:54px; color:var(--rust); font:700 26px/1.2 "DM Sans", sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+  </style>
+</head>
+<body>
+  <section class="slide paper intro" id="slide-1">
+    <div><p class="eyebrow">The official mark</p><img class="primary" src="../../assets/brand/pen-pad-golf-logo-primary-1080.png" alt="Founder-approved Pen Pad Golf Flickline lockup" /><h1>Meet Flickline.</h1><div class="rule"></div></div>
+  </section>
+  <section class="slide" id="slide-2">
+    <img class="media" src="../../PPG_site/assets/pen-pad-golf-cover-hero.png" alt="Approved Pen Pad Golf cover artwork" />
+    <div class="shade"></div>
+    <div class="signature"><img src="../../assets/brand/pen-pad-golf-logo-mark-760x360.png" alt="Pen Pad Golf compact mark" /></div>
+    <div class="copy-bottom"><p class="eyebrow">Pen Pad Golf</p><h2>A little golf.<br />A lot of fun.</h2><p>A printed tabletop golf game played with a pen.</p></div>
+  </section>
+  <section class="slide course" id="slide-3">
+    <img class="media" src="file:///C:/Users/hoagl/Documents/PPG_Course_Map/18_Course_V01_09_06_2026/Course_01_Classic.jpg" alt="Owned Classic Pen Pad Golf course artwork" />
+    <div class="course-copy"><p class="eyebrow">How a round moves</p><h2>Stand it.<br />Flick it.<br />Mark it.</h2><p class="dek">Keep going from the new mark. Lowest score wins.</p></div>
+    <img class="mark" src="../../assets/brand/pen-pad-golf-logo-mark-760x360.png" alt="Pen Pad Golf compact mark" />
+  </section>
+  <section class="slide rules" id="slide-4">
+    <img class="media" src="file:///C:/Users/hoagl/Documents/PPG_Course_Map/PPG_rules_09_06_2026.png" alt="Owned Pen Pad Golf how-to-play artwork" />
+    <div class="rules-copy"><p class="eyebrow">Tabletop golf</p><h2>One pen.<br />Every shot<br />leaves a mark.</h2><div class="steps"><span>Start in the tee box.</span><span>Flick toward the hole.</span><span>Count every landing.</span></div></div>
+    <div class="signature"><img src="../../assets/brand/pen-pad-golf-logo-mark-760x360.png" alt="Pen Pad Golf compact mark" /></div>
+  </section>
+  <section class="slide paper close" id="slide-5">
+    <div><img class="primary" src="../../assets/brand/pen-pad-golf-logo-primary-1080.png" alt="Founder-approved Pen Pad Golf Flickline lockup" /><h2>Follow the build<br />toward launch.</h2><div class="cta">SEE HOW TO PLAY</div></div>
+    <div class="disclosure">In development</div>
+  </section>
+</body>
+</html>

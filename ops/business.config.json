@@ -1,0 +1,18 @@
+{
+  "business": "Pen Pad Golf",
+  "channel_sequence": ["Etsy", "Amazon"],
+  "targets": {
+    "monthly_units": 100,
+    "selling_price_usd": 12,
+    "all_in_expense_per_unit_usd": 5,
+    "actual_real_revenue_rate": 0.4,
+    "amazon_readiness_lifetime_units": 300
+  },
+  "controls": {
+    "founder_owns_product_development": true,
+    "approval_required_for_external_publishing": true,
+    "approval_required_for_spending": true,
+    "approval_required_for_price_changes": true,
+    "approval_required_for_refund_exceptions": true
+  }
+}

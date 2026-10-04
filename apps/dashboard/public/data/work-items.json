@@ -1,0 +1,104 @@
+{
+  "generatedAt": "2026-10-03T23:00:00-04:00",
+  "source": "local-preview",
+  "items": [
+    {
+      "id": "INFRA-001",
+      "title": "Umbrella repository baseline",
+      "agent": "Business Manager",
+      "status": "Agent working",
+      "type": "Infrastructure",
+      "updated": "Just now",
+      "decision": "Review the first tracked baseline and repository boundaries.",
+      "commit": "Pending",
+      "brandReview": "Not required",
+      "evidence": ["README.md", "AGENTS.md", "docs/github-project-setup.md"],
+      "checks": [
+        ["Website changes preserved", true],
+        ["Generated files excluded", true],
+        ["GitHub remote connected", false]
+      ],
+      "activity": [
+        ["Business Manager", "Created umbrella repository contract", "Just now"],
+        ["Business Manager", "Protected PPG_site revision 5c3d49b", "Today"]
+      ]
+    },
+    {
+      "id": "ETSY-001",
+      "title": "Product listing",
+      "agent": "Sales Agent",
+      "status": "Founder approval",
+      "type": "Sales",
+      "updated": "Today",
+      "decision": "Confirm Etsy onboarding and security state before the Sales Agent completes the live listing.",
+      "commit": "Not linked",
+      "brandReview": "Pending",
+      "evidence": ["ops/sales/etsy-shop-plan.md", "Etsy Shop readiness record", "Sales Inbox escalation"],
+      "checks": [
+        ["Listing copy drafted", true],
+        ["Identity verification reported", true],
+        ["Inventory ready", false],
+        ["Public listing URL recorded", false]
+      ],
+      "activity": [
+        ["Sales Agent", "Recorded Etsy onboarding email", "Oct 2"],
+        ["Sales Agent", "Escalated account-security confirmation", "Oct 2"]
+      ]
+    },
+    {
+      "id": "SITE-001",
+      "title": "Website Etsy purchase link",
+      "agent": "Sales Agent",
+      "status": "Blocked external",
+      "type": "Website",
+      "updated": "Today",
+      "decision": "No decision is available until Etsy provides a public product URL.",
+      "commit": "5c3d49b",
+      "brandReview": "Not required",
+      "evidence": ["PPG_site/product.html", "PPG_site branch V2"],
+      "checks": [
+        ["Product page committed", true],
+        ["Product page pushed", true],
+        ["Public Etsy URL available", false]
+      ],
+      "activity": [["Business Manager", "Pushed product page and brand assets", "Today"]]
+    },
+    {
+      "id": "C-014",
+      "title": "Route is yours",
+      "agent": "Marketing Agent",
+      "status": "Brand review",
+      "type": "Marketing",
+      "updated": "Today",
+      "decision": "Brand should review the revised exact carousel exports.",
+      "commit": "Not linked",
+      "brandReview": "Pending",
+      "evidence": ["outputs/marketing/C-014-route-is-yours-static.md", "Exact export fingerprints"],
+      "checks": [
+        ["Creative revised", true],
+        ["Visual QA complete", true],
+        ["Brand re-review", false]
+      ],
+      "activity": [["Marketing Agent", "Submitted revised route-ledger sequence", "Today"]]
+    },
+    {
+      "id": "C-009",
+      "title": "How to play",
+      "agent": "Marketing Agent",
+      "status": "Approved execution",
+      "type": "Marketing",
+      "updated": "Oct 2",
+      "decision": "Execute only after analytics, feedback endpoint, account readiness, and crop QA pass.",
+      "commit": "Not linked",
+      "brandReview": "Approved",
+      "evidence": ["outputs/marketing/C-009-how-to-static.md", "BRD-020"],
+      "checks": [
+        ["Brand review", true],
+        ["Founder approval", true],
+        ["Feedback endpoint", false],
+        ["Analytics", false]
+      ],
+      "activity": [["Brand Agent", "Approved exact v2 exports", "Oct 2"]]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "presentation": {
+    "id": "17ziSojYqUQp-lvvNSQcE1TUsHdKCXQuM7lMb5-APGwI",
+    "title": "PPG_Page_layout",
+    "revisionId": "53Sd2fnw4TxXPg",
+    "slideCount": 22
+  },
+  "snapshotSha256": "41a64fd46a69689ef4e0bf20ee54a53514c1fa0ef7ae37edae1079ca0002d489",
+  "summary": {
+    "totalIssues": 1,
+    "reportedIssues": 1,
+    "truncated": false,
+    "bySeverity": {
+      "warning": 1
+    },
+    "byCode": {
+      "BLANK_SLIDE": 1
+    }
+  },
+  "issues": [
+    {
+      "id": "BLANK_SLIDE:g3fa2c5df2ed_0_0:g3fa2c5df2ed_0_0:slide:all",
+      "code": "BLANK_SLIDE",
+      "severity": "warning",
+      "slideId": "g3fa2c5df2ed_0_0",
+      "slideIndex": 21,
+      "objectId": "g3fa2c5df2ed_0_0",
+      "surface": "slide",
+      "message": "The slide has no slide-local page elements.",
+      "remediation": "Confirm the slide is intentionally blank; otherwise populate it from its selected exemplar."
+    }
+  ]
+}

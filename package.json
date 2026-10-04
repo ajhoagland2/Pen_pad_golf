@@ -1,0 +1,22 @@
+{
+  "name": "pen-pad-golf-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dashboard:dev": "pnpm --dir apps/dashboard dev",
+    "dashboard:build": "pnpm --dir apps/dashboard build",
+    "ops:run": "node ops/run.mjs",
+    "ops:dashboard": "node scripts/build_ppg_business_dashboard.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "jspdf": "latest",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {}
+}

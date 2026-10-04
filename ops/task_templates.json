@@ -1,0 +1,15 @@
+[
+  {"agent":"Marketing Agent","function":"Marketing","cadence":"daily","task":"Advance the earliest sequential non-blocked C-### marketing packet; when one waits on a founder gate, preserve it and continue with the next packet","kpi":"Content items advanced","target":1,"approval_needed":"No"},
+  {"agent":"Brand Agent","function":"Branding","cadence":"daily","task":"Review new Content Pipeline work against the webpage-derived Brand System","kpi":"Assets reviewed","target":1,"approval_needed":"No"},
+  {"agent":"Sales Agent","function":"Sales","cadence":"daily","task":"Review Etsy Messages and the PPG sales inbox, reply to routine requests, and escalate sensitive cases","kpi":"Messages handled within SLA","target":1,"approval_needed":"No"},
+  {"agent":"Purchasing Agent","function":"Purchasing","cadence":"daily","task":"Review inventory against reorder points","kpi":"SKUs reviewed","target":1,"approval_needed":"No"},
+  {"agent":"Distribution Agent","function":"Distribution","cadence":"daily","task":"Review paid but unshipped orders and service exceptions","kpi":"Exceptions resolved","target":1,"approval_needed":"No"},
+  {"agent":"Business Manager","function":"Management","cadence":"daily","task":"Triage blockers and prepare founder approval queue","kpi":"Approvals prepared","target":1,"approval_needed":"Yes"},
+  {"agent":"Marketing Agent","function":"Marketing","cadence":"weekly","task":"Prepare the next seven-day content and campaign test plan","kpi":"Tests planned","target":2,"approval_needed":"Yes"},
+  {"agent":"Sales Agent","function":"Sales","cadence":"weekly","task":"Review Etsy conversion, pricing, and listing test results","kpi":"Listing decisions","target":1,"approval_needed":"Yes"},
+  {"agent":"Brand Agent","function":"Branding","cadence":"weekly","task":"Audit new assets and copy against approved product facts","kpi":"Assets reviewed","target":1,"approval_needed":"Yes"},
+  {"agent":"Purchasing Agent","function":"Purchasing","cadence":"weekly","task":"Review all-in cost, supplier capacity, and open quote requests","kpi":"Cost reviews","target":1,"approval_needed":"Yes"},
+  {"agent":"Distribution Agent","function":"Distribution","cadence":"weekly","task":"Review shipping SLA, damages, returns, and customer exceptions","kpi":"Service reviews","target":1,"approval_needed":"Yes"},
+  {"agent":"Business Manager","function":"Management","cadence":"monthly","task":"Close monthly results and issue the ARR and unit economics scorecard","kpi":"Scorecards issued","target":1,"approval_needed":"Yes"},
+  {"agent":"Marketing Agent","function":"Marketing","cadence":"daily","task":"Prepare or refresh one Brand-approved static campaign as a saved Meta Business Suite draft and attach draft evidence; do not schedule or publish","kpi":"Meta drafts prepared","target":1,"approval_needed":"No"}
+]

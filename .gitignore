@@ -1,0 +1,28 @@
+node_modules/
+.pnpm-store/
+dist/
+implementation-screenshot.png
+tmp/
+.artifact-runtime/
+*.pyc
+__pycache__/
+
+# Reproducible bulk renders. Canonical generators and approved campaign
+# evidence under outputs/ remain versioned.
+output/booklet/
+output/commonwealth_five_golf_club/
+output/course_maps/
+output/reference_designed_courses/
+output/course-slides/*.b64
+output/course-slides/*-contact.png
+output/course-slides/*.pdf
+
+# Generated inspection and preview artifacts.
+outputs/ppg-agent-ops/*.inspect.ndjson
+outputs/ppg-agent-ops/preview-*.png
+
+# Local dashboard configuration.
+.env
+.env.local
+apps/dashboard/.env*
+!apps/dashboard/.env.example

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>C-010 A round almost anywhere — static carousel</title>
+  <style>
+    @font-face { font-family:"Playfair Display"; src:url("fonts/PlayfairDisplay-SemiBold.ttf"); font-weight:600; }
+    @font-face { font-family:"DM Sans"; src:url("fonts/DMSans-SemiBold.ttf"); font-weight:600; }
+    @font-face { font-family:"DM Sans"; src:url("fonts/DMSans-Bold.ttf"); font-weight:700; }
+    :root { --paper:#f7f1e4; --ink:#193225; --green:#31543b; --olive:#667a47; --gold:#9b7319; --rust:#9c3f2c; }
+    * { box-sizing:border-box; }
+    html,body { margin:0; background:#151a16; }
+    body { display:grid; gap:40px; padding:40px; }
+    .slide { position:relative; width:1080px; height:1350px; overflow:hidden; background:var(--paper); color:var(--ink); isolation:isolate; }
+    .media { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .mark { position:absolute; z-index:5; right:62px; top:58px; width:214px; padding:16px 18px; background:rgba(247,241,228,.95); border:2px solid rgba(25,50,37,.28); }
+    .mark img { display:block; width:100%; }
+    .eyebrow { margin:0 0 22px; color:var(--rust); font:700 28px/1 "DM Sans",sans-serif; letter-spacing:.14em; text-transform:uppercase; }
+    h1,h2 { margin:0; font:600 82px/1.03 "Playfair Display",serif; letter-spacing:-.038em; }
+    p { margin:0; }
+    .hook::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(25,50,37,0) 0 52%,rgba(25,50,37,.95) 79% 100%); }
+    .hook-copy { position:absolute; z-index:3; left:72px; right:72px; bottom:72px; color:var(--paper); }
+    .hook-copy .eyebrow { color:#d8b25d; }
+    .hook-copy h1 { max-width:900px; font-size:80px; }
+    .hook-copy .dek { margin-top:24px; color:#e6e2ca; font:600 36px/1.22 "DM Sans",sans-serif; }
+    .place { display:grid; grid-template-rows:820px 1fr; }
+    .place .image-wrap { position:relative; overflow:hidden; background:#ded5c2; }
+    .place .image-wrap img { width:100%; height:100%; object-fit:cover; object-position:center top; }
+    .place .body { position:relative; padding:54px 72px 68px; background:radial-gradient(circle at 92% 10%,rgba(155,115,25,.12),transparent 32%),var(--paper); }
+    .place h2 { max-width:875px; font-size:74px; }
+    .place .dek { margin-top:24px; max-width:870px; color:var(--green); font:700 34px/1.25 "DM Sans",sans-serif; }
+    .porch .body { background:radial-gradient(circle at 12% 80%,rgba(49,84,59,.11),transparent 34%),var(--ink); color:var(--paper); }
+    .porch .eyebrow { color:#d8b25d; }
+    .porch .dek { color:#d5dcbf; }
+    .finish { display:grid; place-items:center; padding:72px; text-align:center; background:url("assets/c010-art-4-finish.png") center/cover no-repeat; }
+    .finish-panel { position:relative; z-index:2; width:780px; padding:46px 56px 58px; background:rgba(247,241,228,.94); border:2px solid rgba(25,50,37,.22); box-shadow:0 18px 50px rgba(25,50,37,.14); }
+    .finish .primary { display:block; width:480px; height:300px; object-fit:contain; margin:-30px auto -28px; }
+    .finish h2 { font-size:76px; }
+    .finish .dek { margin:24px auto 0; max-width:650px; color:var(--green); font:700 34px/1.2 "DM Sans",sans-serif; }
+    .cta { margin:34px auto 0; width:max-content; padding:24px 44px 28px; background:var(--green); color:white; border:3px solid var(--olive); font:700 36px/1 "DM Sans",sans-serif; }
+    .disclosure { margin:26px auto 0; width:max-content; padding:12px 20px 14px; background:var(--paper); color:var(--rust); border:2px solid rgba(156,63,44,.34); font:700 25px/1.2 "DM Sans",sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+  </style>
+</head>
+<body>
+  <section class="slide hook" id="slide-1">
+    <img class="media" src="assets/c010-art-1-kitchen.png" alt="Watercolor paper golf course and navy pen on a warm kitchen table" />
+    <div class="mark"><img src="../../assets/brand/pen-pad-golf-logo-mark-760x360.png" alt="Pen Pad Golf compact Flickline mark" /></div>
+    <div class="hook-copy"><p class="eyebrow">A round, your way</p><h1>A quick round can start almost anywhere.</h1><p class="dek">Just a pen and a printed course.</p></div>
+  </section>
+  <section class="slide place" id="slide-2">
+    <div class="image-wrap"><img src="assets/c010-art-2-desk.png" alt="Watercolor printed course and upright navy pen on a writing desk" /></div>
+    <div class="body"><p class="eyebrow">At your desk</p><h2>Stand the pen. Start the hole.</h2><p class="dek">Start in the tee box. Flick toward the hole.</p></div>
+  </section>
+  <section class="slide place porch" id="slide-3">
+    <div class="image-wrap"><img src="assets/c010-art-3-porch.png" alt="Watercolor printed course and navy pen on a porch table" /></div>
+    <div class="body"><p class="eyebrow">Outside for a while</p><h2>Flick. Mark. Keep playing.</h2><p class="dek">Mark the landing as one stroke. Lowest score wins.</p></div>
+  </section>
+  <section class="slide finish" id="slide-4">
+    <div class="finish-panel"><img class="primary" src="../../assets/brand/pen-pad-golf-logo-primary-1080.png" alt="Founder-approved Pen Pad Golf Flickline lockup" /><p class="eyebrow">Your first round</p><h2>Where will it start?</h2><p class="dek">A little golf. A lot of fun.</p><div class="cta">SEE HOW TO PLAY</div><div class="disclosure">In development</div></div>
+  </section>
+</body>
+</html>

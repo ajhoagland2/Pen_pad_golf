@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Account security or credentials
+    url: https://github.com/settings/security
+    about: Do not place credentials or recovery material in an issue. The founder handles account-security actions directly.

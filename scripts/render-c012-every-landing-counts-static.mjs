@@ -1,0 +1,27 @@
+import { chromium } from 'playwright';
+import { pathToFileURL } from 'node:url';
+import path from 'node:path';
+
+const root = process.cwd();
+const source = path.join(root, 'outputs', 'marketing', 'C-012-every-landing-counts-static-source.html');
+const out = path.join(root, 'outputs', 'marketing');
+const browser = await chromium.launch({
+  headless: true,
+  executablePath: 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
+});
+const page = await browser.newPage({ viewport: { width: 1160, height: 1430 }, deviceScaleFactor: 1 });
+await page.goto(pathToFileURL(source).href, { waitUntil: 'networkidle' });
+await page.evaluate(async () => document.fonts.ready);
+
+for (const i of [1, 2, 3, 4]) {
+  await page.locator(`#slide-${i}`).screenshot({ path: path.join(out, `C-012-every-landing-counts-static-${i}.png`) });
+}
+
+await page.setViewportSize({ width: 2280, height: 2830 });
+await page.evaluate(() => {
+  document.body.style.gridTemplateColumns = 'repeat(2, 1080px)';
+  document.body.style.padding = '40px';
+  document.body.style.gap = '40px';
+});
+await page.screenshot({ path: path.join(out, 'C-012-every-landing-counts-static-review-sheet.png'), fullPage: true });
+await browser.close();
