@@ -8,6 +8,7 @@
     "dashboard:dev": "pnpm --dir apps/dashboard dev",
     "dashboard:build": "pnpm --dir apps/dashboard build",
     "ops:run": "node ops/run.mjs",
+    "ops:board:read": "node scripts/read-agent-board.mjs",
     "ops:dashboard": "node scripts/build_ppg_business_dashboard.mjs"
   },
   "dependencies": {

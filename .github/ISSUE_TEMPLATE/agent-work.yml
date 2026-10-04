@@ -3,6 +3,14 @@ description: Create accountable Pen Pad Golf work with evidence and approval gat
 title: "[WORK] "
 labels: ["agent-work", "status:backlog"]
 body:
+  - type: input
+    id: work-id
+    attributes:
+      label: Work item ID
+      description: Use the durable operating identifier, such as OPS-001 or SALES-004.
+      placeholder: OPS-001
+    validations:
+      required: true
   - type: dropdown
     id: agent
     attributes:
@@ -50,6 +58,22 @@ body:
     attributes:
       label: Approval gates and risks
       description: Identify Brand, founder, security, inventory, fulfillment, or external-system gates.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision requested
+      description: State the exact founder decision, or write Not required.
+      placeholder: Not required
+    validations:
+      required: true
+  - type: textarea
+    id: completion
+    attributes:
+      label: Completion or blocker record
+      description: The owning agent updates this with the result or blocker, verification evidence, and exact next step before closing or moving to Blocked external.
+      placeholder: Pending agent execution.
     validations:
       required: true
   - type: checkboxes

@@ -25,6 +25,8 @@ The command writes `ops/state/agent_queue.json` and `ops/state/agent_log.csv`. I
 
 Use `npm run ops:dashboard` to rebuild the Google Sheets-ready workbook in `outputs/ppg-agent-ops/`.
 
+Use `npm run ops:board:read -- --agent "Sales Agent"` with a project-capable `GITHUB_TOKEN` to read claimable live Project work. Approved execution is returned before in-progress and safe backlog work. The full claim, completion, and blocker contract is in `agent-board-protocol.md`.
+
 ## Daily operating loop
 
 1. Run the local queue generator.
