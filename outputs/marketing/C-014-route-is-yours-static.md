@@ -1,6 +1,6 @@
 # C-014 — The route is yours static carousel
 
-Status: Revised after BRD-028; Brand review Pending; not approved for publication
+Status: Revised after BRD-029; Brand review Pending; not approved for publication
 
 ## Purpose
 
@@ -23,8 +23,8 @@ Hashtags: #PenPadGolf #TabletopGames #GolfGames #GameInDevelopment
 ## Carousel sequence
 
 1. Route ledger cover — “The route is yours.” A light editorial field-note layout frames one founder-owned hole between “Tee box” and “Flag,” with the exact compact Flickline mark.
-2. Start rule — “Stand the pen upright.” One founder-owned hole sits beside a deep-green rule panel; a deterministic upright navy pen is visibly anchored in the printed tee box.
-3. Landing rule — “Leave a mark.” One founder-owned hole carries a single navy landing dot and “Your next start” callout, followed by the literal continuation rule. There is no numbered route or multi-landing path.
+2. Start rule — “Stand the pen upright.” One founder-owned hole sits beside a deep-green rule panel; a deterministic upright navy pen is fully contained within the visible printed tee box.
+3. Landing rule — “Leave a mark.” One founder-owned hole carries a single navy landing dot on playable fairway and a “Your next start” callout, followed by the literal continuation rule. There is no numbered route or multi-landing path.
 4. Scorecard close — “Lowest score wins.” One course ribbon leads into a paper scorecard with the exact primary Flickline lockup, CTA, and visible development disclosure.
 
 Every slide is 1080 × 1350 px. Critical copy and official identity remain inside feed crop-safe margins.
@@ -32,8 +32,8 @@ Every slide is 1080 × 1350 px. Critical copy and official identity remain insid
 ## Alt text
 
 1. Light field-note layout with one framed illustrated golf hole bending around blue water toward a rust-red flag, the words “The route is yours,” and the Pen Pad Golf compact mark.
-2. One illustrated printed golf hole with an upright navy pen in the tee box beside a deep-green panel reading “Stand the pen upright” and “Then flick toward the hole.”
-3. One illustrated printed golf hole with a single navy landing dot and “Your next start” callout above the instruction to continue from the new mark.
+2. One illustrated printed golf hole with an upright navy pen fully inside the visible tee box beside a deep-green panel reading “Stand the pen upright” and “Then flick toward the hole.”
+3. One illustrated printed golf hole with a single navy landing dot on playable fairway and “Your next start” callout above the instruction to continue from the new mark.
 4. One illustrated course ribbon above a paper scorecard with the official Pen Pad Golf lockup, “Lowest score wins,” a See how to play CTA, and an In development disclosure.
 
 ## CTA, tracking, and targets
@@ -59,15 +59,15 @@ Every slide is 1080 × 1350 px. Critical copy and official identity remain insid
 ## Exact-export SHA-256 fingerprints
 
 - Slide 1: `43a19fcc4b90d3063715f750b939ee660c1a883304c5dc26169d6d4deb6613a8`
-- Slide 2: `a77776e0d34dac3c368804b31dba4217c739ca34c38f5ac9dbd2121ce5ea9c12`
-- Slide 3: `bc794075ad6f7e6f864279e2a8deda49d8ab56304d0be306e771bd70af7e17a9`
+- Slide 2: `5afb3ff604b955357044a1fb3d4b385b7127359d8ce6f0998c0621d6a1dbe224`
+- Slide 3: `f8f457532c5cd2c8e17c2e2e784fab96d0b4bd5cfda320fbb6574c0c828bc0ad`
 - Slide 4: `7d2540f346d1467de22ca1f81b2808cd7fbcb018e745f7d20b7a6947e348acbb`
-- Review sheet: `850c59d37681bc7d855c7e59aea5a525346ae59091f31a8567e0a7298fb6a1b4`
+- Review sheet: `6c4f16675ac028dcbc0c681fb8b041694fd04d486fac4e9535c630b473dd5e2a`
 
-Visual QA confirmed the exact exports are 1080 × 1350 and the review sheet is 2280 × 2830. The revised sequence is materially distinct from C-013: no dark hero, paired-course panel, numbered route, or finish mosaic appears. Slide 2’s pen is visibly anchored inside the tee box, slide 3 contains one legible landing callout, and all required copy, official identity, CTA, and development disclosure remain crop-safe and readable at phone size.
+Visual QA confirmed the exact exports are 1080 × 1350 and the review sheet is 2280 × 2830. The revised sequence is materially distinct from C-013: no dark hero, paired-course panel, numbered route, or finish mosaic appears. Slide 2’s upright navy pen is fully contained within the visible illustrated tee box, slide 3’s “Your next start” marker sits on playable fairway rather than water, and all required copy, official identity, CTA, and development disclosure remain crop-safe and readable at phone size.
 
 ## Review and release gates
 
-Brand review BRD-028 requested a materially different visual system because the prior export mirrored C-013’s dark hero, paired-course panel, numbered route, and finish mosaic. Marketing rebuilt all four slides as the light route-ledger sequence documented above while retaining the approved factual narrative, official identity, source ownership, CTA, and claim boundaries. Brand review is reset to `Pending` for the revised exact exports.
+Brand review BRD-028 requested a materially different visual system because the prior export mirrored C-013’s dark hero, paired-course panel, numbered route, and finish mosaic. Marketing rebuilt all four slides as the light route-ledger sequence documented above while retaining the approved factual narrative, official identity, source ownership, CTA, and claim boundaries. BRD-029 then required two literal placement fixes: keep slide 2’s upright navy pen fully inside the visible illustrated tee box, and move slide 3’s “Your next start” marker from water onto playable fairway or green. Both fixes are applied; Brand review is reset to `Pending` for these revised exact exports.
 
 Publication also requires founder `Approved to publish`, a working feedback endpoint and analytics, founder confirmation that the unique Pen Pad Golf Instagram account is ready, and a current in-app crop preview of the eventually approved exports. Any creative or export change requires Brand re-review. Do not schedule or publish. This package does not claim legal clearance; retain provenance and obtain formal trademark clearance before commercial adoption.

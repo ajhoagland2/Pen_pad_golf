@@ -13,9 +13,11 @@ The working copies are stored as `outputs/marketing/assets/c014-course-05-classi
 
 ## Deterministic treatment
 
-The revised package uses a light “route ledger” editorial system in `C-014-route-is-yours-static-source.html`. Every slide contains one course illustration only: a framed field-note cover, a single-course rule sidebar, a single landing callout, and a scorecard finish with one course ribbon. Required copy, CTA, disclosure, typography, palette, compact mark, and primary lockup are deterministic HTML/CSS layers. Slide 2’s upright navy pen is a deterministic CSS shape visibly anchored inside the printed tee box. Slide 3 uses one deterministic landing dot with a callout; it contains no numbered route or multi-landing path. The founder-approved identity files are referenced unchanged from `assets/brand/`.
+The revised package uses a light “route ledger” editorial system in `C-014-route-is-yours-static-source.html`. Every slide contains one course illustration only: a framed field-note cover, a single-course rule sidebar, a single landing callout, and a scorecard finish with one course ribbon. Required copy, CTA, disclosure, typography, palette, compact mark, and primary lockup are deterministic HTML/CSS layers. Slide 2’s upright navy pen is a deterministic CSS shape fully contained within the visible printed tee box. Slide 3 uses one deterministic landing dot on playable fairway with a callout; it contains no numbered route or multi-landing path. The founder-approved identity files are referenced unchanged from `assets/brand/`.
 
 This rebuild directly resolves BRD-028: it does not use C-013’s dark hero crop, paired-course panel, numbered-path treatment, or finish mosaic. No generated or third-party imagery is present.
+
+The two placement corrections requested by BRD-029 are deterministic CSS-only revisions: the slide 2 pen and shadow now remain inside the visible illustrated tee box, and the slide 3 marker and connected callout now sit over playable fairway rather than water. No source imagery, approved copy, CTA, disclosure, or official identity asset changed.
 
 ## Claims boundary
 
