@@ -1,6 +1,6 @@
 # GitHub Project setup
 
-Create a user- or organization-level GitHub Project named **Pen Pad Golf Operations** and link both the umbrella repository and `PPG_site`.
+The private [Pen Pad Golf Operations Project](https://github.com/users/ajhoagland2/projects/6) is live and uses the umbrella repository as its default repository. Website work from `PPG_site` can be added to the same Project when cross-repository coordination is needed.
 
 ## Board fields
 

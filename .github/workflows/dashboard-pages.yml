@@ -46,7 +46,7 @@ jobs:
         run: pnpm dashboard:build
         env:
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
-          VITE_GITHUB_PROJECT_URL: https://github.com/${{ github.repository }}/projects
+          VITE_GITHUB_PROJECT_URL: https://github.com/users/ajhoagland2/projects/6
       - name: Preserve private dashboard build
         uses: actions/upload-artifact@v4
         with:
