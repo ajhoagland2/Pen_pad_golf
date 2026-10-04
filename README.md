@@ -8,7 +8,7 @@ The public website remains independently deployable from the `PPG_site` reposito
 
 GitHub Issues and Projects are the authoritative work queue. Every meaningful agent task must have one issue with an owner, lifecycle state, evidence, approval state, and completion record. Pull requests contain reviewable code and asset changes. Google Sheets may receive reporting exports, but it does not control workflow state.
 
-The founder dashboard under `apps/dashboard/` is the mobile-friendly approval surface. Until its GitHub connection is configured, it runs in clearly labelled local-preview mode using fixture data.
+The founder dashboard under `apps/dashboard/` is the mobile-friendly approval surface. GitHub Actions synchronizes labeled Issues into its dataset and preserves each private-repository build as the `approval-dashboard-build` workflow artifact. Local development runs in clearly labelled preview mode using fixture data.
 
 ## Workspace map
 
@@ -39,4 +39,6 @@ pnpm ops:run
 
 ## Repository setup
 
-The outer repository still needs a GitHub remote. After creating the remote, push the baseline branch and create a GitHub Project using `docs/github-project-setup.md`. Do not run `git add .` inside `PPG_site`; commit and push website work from within that repository, then update the submodule pointer here.
+The umbrella repository is connected to `ajhoagland2/Pen_pad_golf`; the website remains connected to `ajhoagland2/PPG_site`. Create the GitHub Project using `docs/github-project-setup.md`. Do not run `git add .` inside `PPG_site`; commit and push website work from within that repository, then update the submodule pointer here.
+
+GitHub Pages is deliberately gated behind the repository variable `ENABLE_GITHUB_PAGES=true`. Leave it unset while the repository is private on an account plan that cannot publish private-repository Pages. The workflow still builds, validates, and uploads the dashboard artifact without exposing internal work data.

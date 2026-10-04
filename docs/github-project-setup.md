@@ -34,3 +34,7 @@ Assign the founder to issues entering Founder approval. Request founder PR revie
 - Require execution evidence before closing controlled external actions.
 
 The Project is the work-state authority. The dashboard is a focused view over Project and Issue data; Google Sheets is reporting only.
+
+## Private dashboard delivery
+
+The `Publish approval dashboard` workflow always uploads a private `approval-dashboard-build` artifact. Public Pages deployment remains disabled unless the repository variable `ENABLE_GITHUB_PAGES` is explicitly set to `true` after Pages becomes available and its visibility has been reviewed. Do not make the umbrella repository public merely to enable Pages; its work items and approval evidence are operational records.

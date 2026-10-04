@@ -15,6 +15,7 @@ permissions:
   contents: read
   issues: read
   pull-requests: read
+  actions: read
   pages: write
   id-token: write
 
@@ -46,12 +47,22 @@ jobs:
         env:
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
           VITE_GITHUB_PROJECT_URL: https://github.com/${{ github.repository }}/projects
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - name: Preserve private dashboard build
+        uses: actions/upload-artifact@v4
+        with:
+          name: approval-dashboard-build
+          path: apps/dashboard/dist
+      - name: Configure GitHub Pages
+        if: vars.ENABLE_GITHUB_PAGES == 'true'
+        uses: actions/configure-pages@v5
+      - name: Upload GitHub Pages artifact
+        if: vars.ENABLE_GITHUB_PAGES == 'true'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: apps/dashboard/dist
 
   deploy:
+    if: vars.ENABLE_GITHUB_PAGES == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
