@@ -32,6 +32,12 @@ Assign the founder to issues entering Founder approval. Request founder PR revie
 - Set merged pull requests and closed issues to Done.
 - Move PR-backed work to Agent review when marked ready for review.
 - Require execution evidence before closing controlled external actions.
+- Run `.github/workflows/agent-work-reconciliation.yml` hourly and on relevant Issue or pull-request events.
+- Configure the `PPG_PROJECT_TOKEN` Actions secret so the reconciler can update the founder-owned Project v2.
+- Disable the built-in **Code review approved** workflow. Brand decisions use exact-revision labels and evidence because the author and Brand reviewer may share one GitHub identity.
+- Keep Status and Approval atomic: `Founder approval` always pairs with `Pending`; `Approved execution` always pairs with `Approved`.
+
+The label-to-field contract, packet validation rules, recurring-issue synchronization, and WIP limits are documented in `ops/workflows/README.md`.
 
 The Project is the work-state authority. The dashboard is a focused view over Project and Issue data; Google Sheets is reporting only.
 

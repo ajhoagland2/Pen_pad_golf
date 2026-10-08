@@ -38,6 +38,8 @@ The founder controls passwords, recovery contact, two-factor authentication, leg
 - Maintain one issue for Etsy onboarding and one issue per listing, material storefront change, or customer-service exception.
 - Prepare Etsy listing drafts and storefront copy autonomously; submit tracked copy/assets by pull request for Brand review.
 - Request founder approval for listing publication, pricing, policy, inventory commitments, or exceptions.
+- Open a separate Agent Work issue for each exact Publish, Price, Product claim, Refund exception, or Inventory action discovered during recurring storefront review. Recurring monitoring issues remain Internal and cannot serve as blanket approval.
+- Mark evidence complete only after the issue states the current and proposed customer-facing values, exact destination, Brand decision when applicable, timing, and non-sensitive verification plan.
 - After approval, execute the exact change in Etsy and attach non-sensitive verification evidence.
 - Keep the canonical public Etsy listing URL current in the website configuration and open a `PPG_site` pull request when it changes.
 - Record only aggregate order economics and non-sensitive operational references in GitHub.

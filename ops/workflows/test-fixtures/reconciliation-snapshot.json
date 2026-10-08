@@ -1,0 +1,64 @@
+{
+  "issues": [
+    {
+      "id": "I_test14",
+      "number": 14,
+      "title": "Repair agent workflow reconciliation",
+      "body": "## Owning agent\nBusiness Manager\n\n## Action type\nInternal\n\n## Evidence and exact artifacts\nops/workflows/reconcile-agent-work.mjs",
+      "state": "open",
+      "labels": ["agent-work", "status:in-progress"],
+      "assignees": ["ajhoagland2"],
+      "url": "https://github.com/ajhoagland2/Pen_pad_golf/issues/14"
+    }
+  ],
+  "project": {
+    "id": "PVT_test",
+    "title": "Pen Pad Golf Operations",
+    "fields": {
+      "nodes": [
+        {
+          "id": "status-field",
+          "name": "Status",
+          "options": [
+            {"id": "s1", "name": "Backlog"},
+            {"id": "s2", "name": "Agent working"},
+            {"id": "s3", "name": "Agent review"},
+            {"id": "s4", "name": "Brand review"},
+            {"id": "s5", "name": "Founder approval"},
+            {"id": "s6", "name": "Approved execution"},
+            {"id": "s7", "name": "Verification"},
+            {"id": "s8", "name": "Blocked external"},
+            {"id": "s9", "name": "Done"}
+          ]
+        },
+        {
+          "id": "approval-field",
+          "name": "Approval",
+          "options": [
+            {"id": "a1", "name": "Not required"},
+            {"id": "a2", "name": "Pending"},
+            {"id": "a3", "name": "Approved"},
+            {"id": "a4", "name": "Changes requested"},
+            {"id": "a5", "name": "Declined"},
+            {"id": "a6", "name": "Superseded"},
+            {"id": "a7", "name": "Expired"}
+          ]
+        }
+      ]
+    },
+    "items": {
+      "nodes": [
+        {
+          "id": "PVTI_test14",
+          "content": {"id": "I_test14", "number": 14, "repository": {"nameWithOwner": "ajhoagland2/Pen_pad_golf"}},
+          "fieldValues": {
+            "nodes": [
+              {"name": "Backlog", "field": {"name": "Status"}},
+              {"name": "Not required", "field": {"name": "Approval"}}
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

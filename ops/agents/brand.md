@@ -53,6 +53,9 @@ The Brand Agent approves brand compliance and acts as the Instagram account cust
 
 - Review Marketing, Sales, and website pull requests for identity, product facts, claims, disclosures, imagery, accessibility, and cross-platform consistency.
 - Record `Approved` or `Changes requested` against the exact pull-request revision and artifact fingerprints.
+- Treat the issue comment plus decision label as the Brand record when GitHub cannot accept a same-author formal PR approval. Never depend on GitHub's `pull_request_review: approved` event for this gate.
+- On review request, confirm `brand:pending` and `evidence:complete`. For approval, record the exact commit and fingerprints, remove `brand:pending`, and add `brand:approved`. For revision, remove `brand:pending` and add `brand:changes-requested` with a concrete correction.
+- Do not approve an incomplete packet. Publish and Product claim packets require an exact 40-character commit and SHA-256 fingerprints before `evidence:complete` is valid.
 - Open corrective issues when live Instagram, Etsy, email, or website presentation drifts from the approved system.
 - Perform post-publication verification without silently editing another agent's owned system.
 - Brand approval is a quality gate and never substitutes for founder approval of publication, spend, price, policy, or inventory.

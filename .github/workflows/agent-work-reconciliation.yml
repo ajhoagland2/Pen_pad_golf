@@ -1,0 +1,67 @@
+name: Reconcile agent work
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: Apply project-field changes instead of reporting only
+        required: true
+        type: boolean
+        default: false
+  issues:
+    types: [opened, edited, labeled, unlabeled, assigned, unassigned, closed, reopened]
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review, converted_to_draft, closed]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+
+concurrency:
+  group: agent-work-reconciliation
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    if: github.repository == 'ajhoagland2/Pen_pad_golf'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      PPG_PROJECT_TOKEN: ${{ secrets.PPG_PROJECT_TOKEN }}
+      PPG_PROJECT_OWNER: ajhoagland2
+      PPG_PROJECT_NUMBER: "6"
+      PPG_FOUNDER_LOGIN: ajhoagland2
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Verify workflow policy
+        run: npm run ops:test
+
+      - name: Synchronize recurring work issues
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: npm run ops:sync-recurring -- --apply
+
+      - name: Reconcile project fields
+        shell: bash
+        run: |
+          if [[ -z "$PPG_PROJECT_TOKEN" ]]; then
+            echo "## Agent workflow reconciliation" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "> [!WARNING]" >> "$GITHUB_STEP_SUMMARY"
+            echo "> Configure the PPG_PROJECT_TOKEN Actions secret with project scope to enable Project v2 reconciliation." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          APPLY="--apply"
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.apply }}" != "true" ]]; then
+            APPLY=""
+          fi
+          npm run ops:reconcile -- $APPLY

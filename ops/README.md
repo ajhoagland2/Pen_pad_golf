@@ -27,14 +27,16 @@ Use `npm run ops:dashboard` to rebuild the Google Sheets-ready workbook in `outp
 
 ## Daily operating loop
 
-1. Run the local queue generator.
-2. Assign queued tasks to local agents using the matching file in `ops/agents/`.
+1. Let the scheduled reconciliation workflow create or reuse the current recurring GitHub issues. Use `npm run ops:sync-recurring` only for a local report.
+2. Assign GitHub issues to agents using the matching file in `ops/agents/`; local queue files are reporting artifacts, not an actionable backlog.
 3. Require an evidence path or URL for completed work.
 4. Update the matching GitHub Issue and Project card with evidence, status, and any approval request.
 5. Import Etsy orders into `Orders`, campaign data into `Marketing`, and inventory counts into `Inventory`.
 6. The Business Manager reviews exceptions and presents approval-ready Project cards to the founder; reporting metrics can then be synchronized to the Google Sheet.
 
-Founder approval gates are packet-level waits, not a reason for Marketing to idle. When a `C-###` launch packet is waiting on the founder, Marketing records the gate, preserves the ready work, and advances the next sequential packet that has autonomous work available.
+Run `npm run ops:test` to validate the state policy and `npm run ops:reconcile` for a report-only comparison between Issue signals and Project fields. See `ops/workflows/README.md` for apply mode, repository setup, labels, exact approval packets, and WIP controls.
+
+Founder approval gates are packet-level waits, not a reason for Marketing to idle. When a `C-###` launch packet is waiting on the founder, Marketing records the gate, preserves the ready work, and advances the next sequential packet that has autonomous work available. Internal Agent review and Brand review are capacity constraints: Marketing does not create another packet while either queue exceeds its WIP limit.
 
 ## Stage gates
 
