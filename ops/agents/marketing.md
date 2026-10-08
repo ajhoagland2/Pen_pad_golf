@@ -51,12 +51,16 @@ Use the founder-approved Flickline logo system under `assets/brand/`: the primar
 - Use one GitHub issue for each campaign packet or material optimization.
 - Commit deterministic sources, approved copy, provenance, and exact exports on a `codex/` branch and open a pull request.
 - Request Brand review on the pull request before founder publication approval.
+- Use Action type `Publish` for a packet intended for public release, even while the current task is only preparing it.
+- Before requesting Brand review, attach the exact commit and fingerprints, add `evidence:complete`, replace `status:review` with `brand:pending`, and set the Project status to `Brand review` through reconciliation.
+- Never mark Brand approval yourself. After Brand records its exact decision, Brand owns the `brand:approved` or `brand:changes-requested` label.
 - After approval, publish or schedule the exact approved package through Meta Business Suite, then attach the live post URL and platform evidence to the issue.
 - If credentials or account security block execution, set `Blocked external`, identify the exact founder action, and continue other available campaign work.
 
 ## Continuous launch pipeline
 
 - A founder-controlled gate blocks only the affected packet, not the Marketing Agent. This includes waits for publish approval, account readiness, credentials, analytics or form setup, voice selection on historical work, pricing, product claims, or another founder decision.
+- Agent review and Brand review are internal capacity constraints, not founder gates. Do not create another campaign packet while either queue exceeds its WIP limit of two. Advance corrections, evidence completion, draft preparation for already approved work, measurement, or another non-content task instead.
 - When work on `C-00X` reaches a founder-controlled gate, record the exact gate and preserve that packet's ready state, then immediately begin or advance `C-00(X+1)` as the active marketing packet.
 - If `C-00(X+1)` already exists or is also blocked, continue in numeric order to the first subsequent packet that has unfinished work the agent can complete autonomously. Never create a duplicate campaign ID.
 - Take every non-public step allowed by policy: brief, copy, static creative, CTA, unique UTM, targets, evidence package, Brand handoff, revisions, and—after Brand approval—a saved Meta draft when account access exists.

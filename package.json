@@ -8,7 +8,10 @@
     "dashboard:dev": "pnpm --dir apps/dashboard dev",
     "dashboard:build": "pnpm --dir apps/dashboard build",
     "ops:run": "node ops/run.mjs",
-    "ops:dashboard": "node scripts/build_ppg_business_dashboard.mjs"
+    "ops:dashboard": "node scripts/build_ppg_business_dashboard.mjs",
+    "ops:sync-recurring": "node ops/workflows/sync-recurring-work.mjs",
+    "ops:reconcile": "node ops/workflows/reconcile-agent-work.mjs",
+    "ops:test": "node --test ops/workflows/*.test.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
