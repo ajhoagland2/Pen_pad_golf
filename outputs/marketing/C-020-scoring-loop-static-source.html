@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>C-020 One Flick at a Time</title>
+  <style>
+    @font-face { font-family: Playfair; src: url("fonts/PlayfairDisplay-SemiBold.ttf"); font-weight: 600; }
+    @font-face { font-family: "DM Sans"; src: url("fonts/DMSans-opsz-wght.ttf"); font-weight: 400 700; }
+    :root { --ink:#193225; --green:#31543b; --olive:#667a47; --paper:#f7f1e4; --gold:#9b7319; --rust:#9c3f2c; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; background:#d8d0bf; }
+    body { display:grid; gap:48px; justify-content:center; padding:48px; color:var(--ink); font-family:"DM Sans",sans-serif; }
+    .slide { width:1080px; height:1350px; position:relative; overflow:hidden; background:var(--paper); }
+    .slide::before { content:""; position:absolute; inset:0; background:repeating-linear-gradient(0deg,rgba(25,50,37,.018) 0 1px,transparent 1px 7px),radial-gradient(circle at 86% 12%,rgba(155,115,25,.09),transparent 30%); }
+    .safe { position:absolute; inset:54px; border:2px solid rgba(25,50,37,.15); border-radius:28px; }
+    .top { position:absolute; left:76px; right:76px; top:70px; display:flex; align-items:center; justify-content:space-between; z-index:4; }
+    .mark { width:178px; height:84px; object-fit:contain; object-position:left center; }
+    .kicker { color:var(--rust); font-size:20px; font-weight:750; letter-spacing:.15em; text-transform:uppercase; }
+    .title { position:absolute; left:76px; top:190px; width:650px; z-index:4; }
+    h1 { margin:0; font:600 80px/.96 Playfair,serif; letter-spacing:-.045em; }
+    .dek { margin:24px 0 0; width:560px; font-size:29px; line-height:1.35; }
+    .course { position:absolute; left:76px; top:475px; width:610px; height:720px; border-radius:32px; overflow:hidden; border:2px solid rgba(25,50,37,.25); box-shadow:0 24px 58px rgba(25,50,37,.18); background:#e8e1d2; }
+    .course img { position:absolute; left:50%; top:50%; height:960px; transform:translate(-50%,-50%) scale(1.09); filter:saturate(.92) contrast(1.04); }
+    .course::after { content:""; position:absolute; inset:18px; border:1px solid rgba(247,241,228,.55); border-radius:20px; }
+    .scorecard { position:absolute; right:76px; top:470px; width:275px; min-height:620px; padding:30px 26px 28px; background:#fffaf0; border:2px solid rgba(25,50,37,.28); box-shadow:0 18px 42px rgba(25,50,37,.16); transform:rotate(1.5deg); z-index:4; }
+    .scorecard h2 { margin:0 0 20px; font:600 34px/1.05 Playfair,serif; }
+    .score-row { display:grid; grid-template-columns:1fr 58px; align-items:center; min-height:76px; border-top:2px solid rgba(25,50,37,.18); font-size:21px; font-weight:700; }
+    .score-row span:last-child { display:grid; place-items:center; width:52px; height:52px; border:4px solid var(--rust); border-radius:50%; font-size:25px; }
+    .score-note { margin:22px 0 0; padding-top:20px; border-top:2px solid rgba(25,50,37,.18); color:var(--green); font-size:20px; line-height:1.35; font-weight:700; }
+    .route { position:absolute; left:320px; top:300px; width:150px; height:250px; border-left:7px dashed var(--rust); border-radius:50%; transform:rotate(8deg); z-index:3; }
+    .route::after { content:""; position:absolute; left:-17px; top:-12px; border-left:14px solid transparent; border-right:14px solid transparent; border-bottom:28px solid var(--rust); transform:rotate(-8deg); }
+    .landing { position:absolute; left:356px; top:500px; width:82px; height:82px; display:grid; place-items:center; border:7px solid var(--rust); border-radius:50%; background:rgba(247,241,228,.8); font-size:31px; font-weight:800; z-index:4; }
+    .slide-3 .landing { left:340px; top:355px; }
+    .flag-ring { position:absolute; left:72px; top:34px; width:128px; height:128px; border:7px solid var(--rust); border-radius:50%; z-index:4; }
+    .footer { position:absolute; left:76px; right:76px; bottom:72px; display:flex; align-items:flex-end; justify-content:space-between; z-index:4; }
+    .cta { padding:17px 28px 18px; border-radius:999px; background:var(--ink); color:var(--paper); font-size:23px; font-weight:750; }
+    .disclosure { color:rgba(25,50,37,.7); font-size:17px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; }
+    .slide-1 .scorecard { top:520px; min-height:500px; }
+    .slide-1 .course { width:920px; height:635px; }
+    .slide-1 .course img { width:920px; height:auto; transform:translate(-50%,-49%) scale(1.28); }
+    .slide-1 .scorecard { right:94px; width:305px; }
+    .slide-4 .scorecard { background:var(--ink); color:var(--paper); }
+    .slide-4 .score-row { border-color:rgba(247,241,228,.25); }
+    .slide-4 .score-note { color:#e7d39d; border-color:rgba(247,241,228,.25); }
+    .review { width:2280px; height:2830px; padding:76px 90px 70px; background:#eee8da; display:grid; grid-template-rows:auto 1fr auto; row-gap:48px; overflow:hidden; }
+    .review h3 { margin:0; font:600 72px/1 Playfair,serif; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:52px; align-content:center; }
+    .preview { width:1010px; height:1262.5px; overflow:hidden; box-shadow:0 18px 42px rgba(25,50,37,.18); }
+    .preview .slide { transform:scale(.9351851852); transform-origin:top left; }
+    .review footer { display:grid; grid-template-columns:1fr 650px; gap:56px; border-top:3px solid rgba(25,50,37,.17); padding-top:34px; font-size:24px; line-height:1.4; }
+    .checks { display:grid; grid-template-columns:1fr 1fr; gap:12px 28px; }
+    .checks span::before { content:"✓"; margin-right:10px; color:var(--green); font-weight:850; }
+  </style>
+</head>
+<body>
+  <div id="slides"></div>
+  <section class="review" id="review-sheet">
+    <h3>C-020 — One flick at a time · review sheet</h3>
+    <div class="grid" id="review-grid"></div>
+    <footer><div>Brand approval is requested for these exact four static exports, platform copy, deterministic source, provenance, commit, and fingerprints. Publication remains separately gated.</div><div class="checks"><span>1080 × 1350 each</span><span>Static-only carousel</span><span>Approved scoring only</span><span>Official compact mark</span><span>Founder-owned art</span><span>Development disclosure</span></div></footer>
+  </section>
+  <script>
+    const slides = [
+      {title:"One flick at a time.", dek:"A round unfolds landing by landing — and every landing moves the score forward.", rows:[["Start","T"],["Landing","1"],["Next flick","2"]], note:"A simple scoring rhythm.", cue:""},
+      {title:"Flick. Then mark.", dek:"Flick toward the hole. Mark the landing as one stroke.", rows:[["Tee box","0"],["First landing","1"],["Mark it","✓"]], note:"One landing counts as one stroke.", cue:'<div class="route"></div><div class="landing">1</div>'},
+      {title:"Continue from there.", dek:"Stand the pen at the marked landing and take the next flick.", rows:[["Landing","1"],["Next landing","2"],["Keep going","→"]], note:"The course records the round.", cue:'<div class="landing">2</div>'},
+      {title:"Lowest score wins.", dek:"Finish the hole, compare scores, and play the next one.", rows:[["Player A","4"],["Player B","5"],["Low score","✓"]], note:"Stand it. Flick it. Mark it.", cue:'<div class="flag-ring"></div>'}
+    ];
+    function card(s,i,id="") { return `<section class="slide slide-${i+1}" ${id?`id="${id}"`:""}><div class="safe"></div><div class="top"><img class="mark" src="../../assets/brand/pen-pad-golf-logo-mark-760x360.png" alt=""><div class="kicker">Round notes · ${String(i+1).padStart(2,"0")}</div></div><div class="title"><h1>${s.title}</h1><p class="dek">${s.dek}</p></div><div class="course"><img src="assets/c020-course-03-modern.jpg" alt="">${s.cue}</div><aside class="scorecard"><h2>Scorecard</h2>${s.rows.map(r=>`<div class="score-row"><span>${r[0]}</span><span>${r[1]}</span></div>`).join("")}<p class="score-note">${s.note}</p></aside><div class="footer"><div class="cta">${i===3?"See how to play →":`Card ${i+1} of 4`}</div><div class="disclosure">Pen Pad Golf · In development</div></div></section>`; }
+    document.getElementById("slides").innerHTML=slides.map((s,i)=>card(s,i,`slide-${i+1}`)).join("");
+    document.getElementById("review-grid").innerHTML=slides.map((s,i)=>`<div class="preview">${card(s,i)}</div>`).join("");
+  </script>
+</body>
+</html>
