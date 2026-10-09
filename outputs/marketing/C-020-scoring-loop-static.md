@@ -1,6 +1,6 @@
 # C-020 — One flick at a time
 
-Status: Ready for Brand re-review after BRD-038 revision; founder publication approval Pending
+Status: Brand Approved under BRD-039 for exact creative commit `ef818e1480955b30623aca57057290e3a7ddc307`; founder publication approval Pending
 
 ## Purpose
 
@@ -55,8 +55,8 @@ Four-slide cream-paper Pen Pad Golf carousel styled as a vintage field scorecard
 
 Visual QA confirmed all four exact exports are 1080 × 1350 and the review sheet is 2280 × 2830. The source course number, par, yardage, and footer are excluded. The slide 2 route stays on playable fairway and ends at a fully visible landing mark. On slide 3, the complete upright navy pen, tip, and shadow sit at the marked first landing on broad playable fairway, and the dashed continuation route stays on fairway to the existing second landing marker. Slide 4's finish cue surrounds the flag. Copy, sample scorecards, CTA, disclosure, and official identity are readable and crop-safe. Slides 1, 2, and 4 remain byte-identical to the BRD-038 review package.
 
-## Review and release gates
+## Brand decision and release gates
 
-BRD-038 requested a slide-3-only literal correction. That correction is complete: slide 3 now shows the upright navy pen at landing 1 and a restrained deterministic route to landing 2. Slides 1, 2, and 4, the scorecard system, approved copy, identity, typography, palette, CTA, disclosure, crop safety, and founder-owned course art are preserved. Brand re-review is `Pending` for the revised slide 3, refreshed review sheet, deterministic source, alt text, provenance, QA notes, exact commit, and fingerprints above.
+BRD-039 — Approved for exact creative commit `ef818e1480955b30623aca57057290e3a7ddc307` and the five SHA-256 fingerprints above. The BRD-038 correction passes: slide 3 now literally shows the complete upright navy pen, tip, and shadow at landing 1 on playable fairway, with a restrained dashed route to landing 2. Slides 1, 2, and 4 remain byte-identical. The scorecard system, factual scoring copy, official Flickline compact mark, exact typography and palette, crop safety, CTA, disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass.
 
-Publication remains blocked until Brand approval, founder `Approved to publish`, a working feedback endpoint and analytics, founder confirmation that the unique Pen Pad Golf Instagram account is ready, and a current in-app crop preview of the exact approved exports. Approval would apply only to the recorded commit and fingerprints and would not constitute legal clearance; retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish.
+Approval applies only to the recorded creative commit and fingerprints and is not legal clearance; retain provenance and obtain formal trademark clearance before commercial adoption. Publication remains blocked until founder `Approved to publish`, a working feedback endpoint and analytics, founder confirmation that the unique Pen Pad Golf Instagram account is ready, and a current in-app crop preview of the exact approved exports. Any creative or export change requires Brand re-review. Do not schedule or publish.
