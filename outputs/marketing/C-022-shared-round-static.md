@@ -1,6 +1,6 @@
 # C-022 — Shared round
 
-Status: Ready for Brand re-review; founder publication approval Pending
+Status: Brand Approved; founder publication approval Pending
 
 ## Purpose
 
@@ -70,3 +70,9 @@ The recorded review-sheet fingerprint does not match the committed file. The pac
 ## Marketing correction — 2026-10-09
 
 Corrected the review-sheet fingerprint above to the verified local and committed Git LFS object hash `303da0ee2191a9e5edc3bf6f13cb3be99662cbb5fe7f36f9a2235b9752f137eb`. Reconfirmed the four slide hashes and versioned source-art hash against the committed files. No creative, copy, source, or export bytes changed; Brand review is reset to `Pending` for the exact corrected evidence package.
+
+## Brand decision — BRD-042 — 2026-10-09
+
+**Approved.** Re-review at exact evidence commit `f1b8f467d6977b9add14c025ab5f21c4b701e2e4` confirms the corrected review-sheet SHA-256 `303da0ee2191a9e5edc3bf6f13cb3be99662cbb5fe7f36f9a2235b9752f137eb` matches the committed Git LFS object and local file, while all four slide hashes and the versioned source-art hash remain unchanged and verified. The four exact 1080 × 1350 exports, hook, shared-round narrative, CTA, factual gameplay and scoring language, official Flickline identity, Playfair Display / DM Sans typography, approved natural palette and paper texture, crop safety, in-development disclosure, caption, alt text, originality, founder-owned provenance, dimensions, and source-label exclusion pass.
+
+Approval applies only to commit `f1b8f467d6977b9add14c025ab5f21c4b701e2e4` and the recorded fingerprints. It is not legal clearance; formal trademark clearance remains recommended before commercial adoption. Founder `Approved to publish`, working feedback and analytics, founder-confirmed Instagram readiness, and current in-app crop QA still gate release.
