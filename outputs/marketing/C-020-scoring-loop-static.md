@@ -1,6 +1,6 @@
 # C-020 — One flick at a time
 
-Status: Needs revision after Brand review BRD-038; founder publication approval Pending
+Status: Ready for Brand re-review after BRD-038 revision; founder publication approval Pending
 
 ## Purpose
 
@@ -22,7 +22,7 @@ Hashtags: #PenPadGolf #TabletopGames #GolfGames #GameInDevelopment
 
 ## Alt text
 
-Four-slide cream-paper Pen Pad Golf carousel styled as a vintage field scorecard. Each slide pairs the unchanged official compact Flickline mark with founder-owned watercolor course art. Slide 1 introduces the landing-by-landing rhythm. Slide 2 traces a flick and marks the first landing as one stroke. Slide 3 continues from the marked landing. Slide 4 circles the flag and compares sample scores to state that lowest score wins. Every slide says the game is in development.
+Four-slide cream-paper Pen Pad Golf carousel styled as a vintage field scorecard. Each slide pairs the unchanged official compact Flickline mark with founder-owned watercolor course art. Slide 1 introduces the landing-by-landing rhythm. Slide 2 traces a flick and marks the first landing as one stroke. Slide 3 shows an upright navy pen at landing 1 and a dashed route to landing 2. Slide 4 circles the flag and compares sample scores to state that lowest score wins. Every slide says the game is in development.
 
 ## CTA, tracking, and targets
 
@@ -49,16 +49,14 @@ Four-slide cream-paper Pen Pad Golf carousel styled as a vintage field scorecard
 
 - Slide 1: `599ab99b1f9ab7c0e0205693a8c38b7990febca6a7a0e28975aa9c117dd1ac99`
 - Slide 2: `009fcb95ae3b299203eeca727dd772462f247b19604e734d2cd3608e32d1fc21`
-- Slide 3: `1eed6d6e8553568d2133be8246772ce869922c4efd84f7e621a241a9ccd37eb8`
+- Slide 3: `89610f9fac0527cba91b97db7c041d74db043b97ff4f56b805603f9bd4bc5199`
 - Slide 4: `8627d30125ea8637ecc67fe4e075b0179775173d42187750ef5627641d7e2761`
-- Review sheet: `2c3716040fb3eb241bd69fed84e4bb48f003f89799f3e3f16a170b8a00f66428`
+- Review sheet: `aa1e9924c08373390da10f113a45becb5a0c4d3c67c1ffec80abcfe236487236`
 
-Visual QA confirmed all four exact exports are 1080 × 1350 and the review sheet is 2280 × 2830. The source course number, par, yardage, and footer are excluded. The slide 2 route stays on the playable fairway and ends at a fully visible landing mark; slide 3's next landing mark is on broad fairway; and slide 4's finish cue surrounds the flag. Copy, sample scorecards, CTA, disclosure, and official identity are readable and crop-safe.
+Visual QA confirmed all four exact exports are 1080 × 1350 and the review sheet is 2280 × 2830. The source course number, par, yardage, and footer are excluded. The slide 2 route stays on playable fairway and ends at a fully visible landing mark. On slide 3, the complete upright navy pen, tip, and shadow sit at the marked first landing on broad playable fairway, and the dashed continuation route stays on fairway to the existing second landing marker. Slide 4's finish cue surrounds the flag. Copy, sample scorecards, CTA, disclosure, and official identity are readable and crop-safe. Slides 1, 2, and 4 remain byte-identical to the BRD-038 review package.
 
 ## Review and release gates
 
-Brand review BRD-038: **Needs revision** for exact commit `423aaff` and the five fingerprints above. The scorecard system is distinct, and the hook, CTA, factual scoring language, official Flickline compact mark, exact typography and palette, crop safety, disclosure, founder-owned art, provenance, and recorded hashes pass. Slide 3 does not literally show its instruction, “Stand the pen at the marked landing and take the next flick”: the artwork contains only the next-landing marker, with no upright pen at landing 1 and no visible route from that starting point to landing 2.
-
-Marketing next action: revise slide 3 only. Add a believable upright navy pen, with its full body, tip, and shadow on playable fairway at the marked first landing, and show a restrained deterministic route from that start to the existing `2` landing marker. Preserve slides 1, 2, and 4, the scorecard system, approved copy, identity, typography, palette, CTA, disclosure, crop safety, and founder-owned course art. Re-export slide 3 and the review sheet; update deterministic source, alt text, provenance, QA notes, and SHA-256 fingerprints; reset Brand review to `Pending`; and return the new exact commit and hashes for re-review.
+BRD-038 requested a slide-3-only literal correction. That correction is complete: slide 3 now shows the upright navy pen at landing 1 and a restrained deterministic route to landing 2. Slides 1, 2, and 4, the scorecard system, approved copy, identity, typography, palette, CTA, disclosure, crop safety, and founder-owned course art are preserved. Brand re-review is `Pending` for the revised slide 3, refreshed review sheet, deterministic source, alt text, provenance, QA notes, exact commit, and fingerprints above.
 
 Publication remains blocked until Brand approval, founder `Approved to publish`, a working feedback endpoint and analytics, founder confirmation that the unique Pen Pad Golf Instagram account is ready, and a current in-app crop preview of the exact approved exports. Approval would apply only to the recorded commit and fingerprints and would not constitute legal clearance; retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish.
