@@ -1,6 +1,6 @@
 # C-021 — First flick challenge
 
-Status: Ready for Brand review; founder publication approval Pending
+Status: Brand Approved at exact creative commit `178f7e6427c1763c23d6dbce3d96b056b01008c5`; founder publication approval Pending
 
 ## Purpose
 
@@ -59,6 +59,8 @@ All four exact exports are 1080 × 1350 px and the review sheet is 2280 × 2830 
 
 ## Brand review and release gates
 
-Brand review is `Pending` for the exact exports, caption, alt text, CTA, disclosure, deterministic source, provenance, commit, and fingerprints. Approval applies only to the reviewed commit and hashes and is not legal clearance; retain provenance and obtain formal trademark clearance before commercial adoption.
+Brand review is `Approved` for exact creative commit `178f7e6427c1763c23d6dbce3d96b056b01008c5` and the five SHA-256 fingerprints recorded above. The first-flick challenge framing, literal gameplay and scoring, official Flickline identity, exact typography and palette, crop safety, CTA, in-development disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass.
+
+Approval applies only to the reviewed commit and hashes and is not legal clearance; retain provenance and obtain formal trademark clearance before commercial adoption. Any creative, copy, source, export, or fingerprint change requires Brand re-review.
 
 Do not schedule or publish until Brand is `Approved`, founder publication approval is `Approved to publish`, the founder confirms the unique Pen Pad Golf Instagram account is ready, the feedback endpoint and analytics work end to end, and the exact approved exports pass current in-app crop QA.
