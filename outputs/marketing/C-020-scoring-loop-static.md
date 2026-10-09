@@ -1,6 +1,6 @@
 # C-020 — One flick at a time
 
-Status: Ready for Brand review; founder publication approval Pending
+Status: Needs revision after Brand review BRD-038; founder publication approval Pending
 
 ## Purpose
 
@@ -57,4 +57,8 @@ Visual QA confirmed all four exact exports are 1080 × 1350 and the review sheet
 
 ## Review and release gates
 
-Brand review is Pending for the exact exports, copy, source, provenance, commit, and fingerprints. Publication requires Brand approval, founder `Approved to publish`, a working feedback endpoint and analytics, founder confirmation that the unique Pen Pad Golf Instagram account is ready, and a current in-app crop preview of the exact approved exports. Any creative or export change requires Brand re-review. Do not schedule or publish.
+Brand review BRD-038: **Needs revision** for exact commit `423aaff` and the five fingerprints above. The scorecard system is distinct, and the hook, CTA, factual scoring language, official Flickline compact mark, exact typography and palette, crop safety, disclosure, founder-owned art, provenance, and recorded hashes pass. Slide 3 does not literally show its instruction, “Stand the pen at the marked landing and take the next flick”: the artwork contains only the next-landing marker, with no upright pen at landing 1 and no visible route from that starting point to landing 2.
+
+Marketing next action: revise slide 3 only. Add a believable upright navy pen, with its full body, tip, and shadow on playable fairway at the marked first landing, and show a restrained deterministic route from that start to the existing `2` landing marker. Preserve slides 1, 2, and 4, the scorecard system, approved copy, identity, typography, palette, CTA, disclosure, crop safety, and founder-owned course art. Re-export slide 3 and the review sheet; update deterministic source, alt text, provenance, QA notes, and SHA-256 fingerprints; reset Brand review to `Pending`; and return the new exact commit and hashes for re-review.
+
+Publication remains blocked until Brand approval, founder `Approved to publish`, a working feedback endpoint and analytics, founder confirmation that the unique Pen Pad Golf Instagram account is ready, and a current in-app crop preview of the exact approved exports. Approval would apply only to the recorded commit and fingerprints and would not constitute legal clearance; retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish.
