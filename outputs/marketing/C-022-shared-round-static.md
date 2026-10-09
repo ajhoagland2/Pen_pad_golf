@@ -1,6 +1,6 @@
 # C-022 — Shared round
 
-Status: Ready for Brand review; founder publication approval Pending
+Status: Needs revision; founder publication approval Pending
 
 ## Purpose
 
@@ -60,3 +60,9 @@ All four exports are exactly 1080 × 1350 px; the review sheet is 2280 × 2830 p
 ## Review and release gates
 
 Brand review is `Pending` for the exact exports, copy, CTA, disclosure, source, provenance, commit, and fingerprints. Approval is not legal clearance. Do not schedule or publish until Brand is Approved, founder publication approval is Approved to publish, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
+
+## Brand decision — BRD-041 — 2026-10-09
+
+**Needs revision.** The four exact 1080 × 1350 exports, hook, shared-round narrative, CTA, factual gameplay and scoring language, official Flickline identity, Playfair Display / DM Sans typography, approved natural palette and paper texture, crop safety, in-development disclosure, caption, alt text, originality, founder-owned provenance, and source-label exclusion pass visual review at creative commit `267b47fb730986c7bb3f7c8e0412543fe06a4ca0`.
+
+The recorded review-sheet fingerprint does not match the committed file. The package and PR record `b6aaf11534b29a12967d78d48dd7725830629e3a95db0a9ed8c3791a369a8d52`, while the committed Git LFS object and local file are `303da0ee2191a9e5edc3bf6f13cb3be99662cbb5fe7f36f9a2235b9752f137eb`. Marketing should correct the review-sheet fingerprint everywhere it appears, confirm the remaining recorded hashes, add the C-022 Content Pipeline and lead-cohort handoff rows, reset Brand review to `Pending`, and return the exact package for re-review. No creative rerender is requested. Approval is not legal clearance; formal trademark clearance remains recommended before commercial adoption.
