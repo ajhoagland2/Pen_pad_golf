@@ -1,6 +1,6 @@
 # C-023 — Story rules set
 
-Status: Brand review Pending; founder publication approval Pending
+Status: Brand Approved (BRD-043); founder publication approval Pending
 
 ## Purpose
 
@@ -59,4 +59,6 @@ All four exports are exactly 1080 × 1920 px; the review sheet is 2280 × 3970 p
 
 ## Review and release gates
 
-Brand review is `Pending` for the exact exports, copy, CTA, disclosure, source, provenance, commit, and fingerprints. Approval is not legal clearance. Do not schedule or publish until Brand is Approved, founder publication approval is Approved to publish, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
+Brand review is `Approved` under BRD-043 for exact creative commit `4fdf261351351df10b50438dadf5c6d68402d2db` and the six SHA-256 fingerprints recorded above. The four-frame Story rules set passes hook, CTA, factual gameplay and scoring, official unchanged Flickline identity, exact Playfair Display / DM Sans typography, approved natural palette and paper treatment, phone-size readability, Story safe-area placement, literal pen and landing-mark depiction, in-development disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion.
+
+Approval applies only to that commit and those fingerprints and is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA. Any creative or export change requires Brand re-review.
