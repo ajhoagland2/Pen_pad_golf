@@ -1,6 +1,6 @@
 # C-025 — Tee box to flag
 
-Status: Brand review Needs revision; founder publication approval Pending
+Status: Brand re-review Pending after BRD-046 correction; founder publication approval Pending
 
 ## Purpose
 
@@ -47,17 +47,17 @@ Three cream, ink, and forest-green Pen Pad Golf carousel slides styled as a tact
 ## Exact SHA-256 fingerprints
 
 - Slide 1: `6c2473399fab4b1d19acee16e441105e1d3d17494ad9e354cd26f448dbe35953`
-- Slide 2: `730b56cd1608dfac823900409efb49d46f31a5146b2b946633083375d1f4426e`
+- Slide 2: `246f071ce3c6e9b656c68e84d8e07f019b74b379062c1b6129c5b910446fcc8a`
 - Slide 3: `77dae17f14be2a5dc80c5f1566d9ada2e3b86b840e996ceb18030fe82c66d771`
-- Review sheet: `9c129a7df11a89aed74a894521372391325fe8eec25a031e91cdbd4e0e2fe59f`
+- Review sheet: `009df756766b8a73fa3bb37a32d2220a940696e59c59f4e7ed9142772e50a02a`
 - Versioned source art: `59b0222efeed52e27ddd420efc9dc2ea62d253593b2fdbac4520853f13f15977`
 
 ## Visual QA
 
-All three exports are exactly 1080 × 1350 px; the review sheet is 2280 × 2830 px. The source hole, par, yardage, and footer labels are excluded. Slide 2 enlarges the actual printed tee box and keeps the complete upright navy pen and tip inside it. Slide 3 clearly shows the source flag and hole. All copy, CTA, disclosure, and official identity remain inside crop-safe margins and are readable at phone size.
+All three exports are exactly 1080 × 1350 px; the review sheet is 2280 × 2830 px. The source hole, par, yardage, and footer labels are excluded. The BRD-046 slide-2 correction enlarges the actual printed tee box and replaces the rejected 18 × 70 px peg-like treatment with a visibly complete upright navy pen: capped barrel, gold clip and band, textured grip, conical tip, and shadow are recognizable at phone size, with the pen and tip visibly contained by the printed tee-box area. Slides 1 and 3 remain byte-identical. Slide 3 clearly shows the source flag and hole. All copy, CTA, disclosure, and official identity remain inside crop-safe margins and are readable at phone size.
 
 ## Review and release gates
 
-Brand review is **Needs revision** under BRD-046 for exact creative commit `84bf43c97087a59479518353f8422a5065d3c30f` and the five recorded SHA-256 fingerprints. The hook, CTA, factual gameplay/scoring, official Flickline identity, exact typography and palette, crop safety, disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass. Slide 2 does not: the 18 × 70 px drawn pen body reads as a short marker or peg at final size, rather than a recognizable complete upright pen, so the image does not substantiate the literal “Stand the pen upright” instruction or its own alt text. Marketing should revise slide 2 only with a visibly complete upright navy pen and tip inside the existing printed tee box, keeping slides 1 and 3 byte-identical, then update the review sheet, alt text/QA notes if needed, and fingerprints before returning for Brand re-review.
+BRD-046 marked exact creative commit `84bf43c97087a59479518353f8422a5065d3c30f` **Needs revision** because slide 2's 18 × 70 px pen body read as a peg. That slide-2-only issue is now corrected while slides 1 and 3 remain byte-identical. Brand re-review is **Pending** for the exact corrective commit and refreshed fingerprints above. Any creative or export change requires another Brand review.
 
 Approval is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until Brand is Approved, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
