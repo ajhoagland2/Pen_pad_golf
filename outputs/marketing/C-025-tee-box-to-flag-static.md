@@ -1,6 +1,6 @@
 # C-025 — Tee box to flag
 
-Status: Brand review Pending; founder publication approval Pending
+Status: Brand review Needs revision; founder publication approval Pending
 
 ## Purpose
 
@@ -58,6 +58,6 @@ All three exports are exactly 1080 × 1350 px; the review sheet is 2280 × 2830 
 
 ## Review and release gates
 
-Brand review is **Pending** for the exact commit and fingerprints that will be recorded after final render QA. Any creative or export change requires another Brand review.
+Brand review is **Needs revision** under BRD-046 for exact creative commit `84bf43c97087a59479518353f8422a5065d3c30f` and the five recorded SHA-256 fingerprints. The hook, CTA, factual gameplay/scoring, official Flickline identity, exact typography and palette, crop safety, disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass. Slide 2 does not: the 18 × 70 px drawn pen body reads as a short marker or peg at final size, rather than a recognizable complete upright pen, so the image does not substantiate the literal “Stand the pen upright” instruction or its own alt text. Marketing should revise slide 2 only with a visibly complete upright navy pen and tip inside the existing printed tee box, keeping slides 1 and 3 byte-identical, then update the review sheet, alt text/QA notes if needed, and fingerprints before returning for Brand re-review.
 
 Approval is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until Brand is Approved, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
