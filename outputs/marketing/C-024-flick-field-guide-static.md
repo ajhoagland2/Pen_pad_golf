@@ -1,6 +1,6 @@
 # C-024 — Flick field guide
 
-Status: Brand review Needs revision (BRD-044); founder publication approval Pending
+Status: Brand re-review Pending after BRD-044 correction; founder publication approval Pending
 
 ## Purpose
 
@@ -23,7 +23,7 @@ CTA: Save the guide and see how to play.
 
 ## Alt text
 
-Four cream-and-forest Pen Pad Golf carousel slides styled as a tactile field guide over founder-owned Course 07 sketch art. The first introduces the flick. The second shows a complete upright navy pen at the tee box. The third shows a restrained route from the pen to a landing mark on playable fairway. The fourth explains continuing from the mark until the hole and states that lowest score wins, with the official Flickline primary lockup and an in-development disclosure.
+Four cream-and-forest Pen Pad Golf carousel slides styled as a tactile field guide over founder-owned Course 07 sketch art. The first introduces the flick. The second shows a complete upright navy pen, tip, and shadow inside the course art's printed tee box. The third shows a restrained route from the pen to a landing mark on playable fairway. The fourth explains continuing from the mark until the hole and states that lowest score wins, with the official Flickline primary lockup and an in-development disclosure.
 
 ## CTA, tracking, and targets
 
@@ -48,20 +48,18 @@ Four cream-and-forest Pen Pad Golf carousel slides styled as a tactile field gui
 ## Exact SHA-256 fingerprints
 
 - Slide 1: `c6228c7a513e0692b6ad0c1994f09c8fb392982cf25790f88d09d081c506a6ed`
-- Slide 2: `dcc87ef6fdc12460982d5f1d814fae7ff1c46cbc8fd18974af2b9d3b10d77930`
+- Slide 2: `1e26495464ba0be46bf3d20aba22e979605c7468f141fa3caf295bd31260ce48`
 - Slide 3: `7cb63d0a226dede6454c51c41b2ab67b27cbf1c288c4fb36016d3b27240a50d6`
 - Slide 4: `0391358d1c8857aba4c43adbc3160cc408b762642352f3c03d89a8648dfc6301`
-- Review sheet: `ef1fc502515fcfe86d4825d0bc7d70ad9ce77de58582c62c4671632b3bf23cff`
+- Review sheet: `80d6977c721f60274b26df0a16dd9025e0e6bb6d82a37129671aa9244cebcc07`
 - Versioned source art: `27122ea9d6a0cfe97b48cc0940d6ac4e8714703fd7add5b7268e1dc481ab784f`
 
 ## Visual QA
 
-All four exports are exactly 1080 × 1350 px; the review sheet is 2280 × 2830 px. The source course number, par, yardage, name, and footer are excluded. Slide 2 keeps the complete upright pen, tip, and shadow anchored at the visible printed tee box. Slide 3 keeps the pen, route cue, and landing mark inside the playable course boundary. All copy, CTA, disclosure, and official identity remain inside crop-safe margins and are readable at phone size.
+All four exports are exactly 1080 × 1350 px; the review sheet is 2280 × 2830 px. The source course number, par, yardage, name, and footer are excluded. Slide 2 now shows the complete printed tee box from the founder-owned course art and keeps the complete upright pen, tip, and shadow inside it; the rejected red outline has been removed. Slide 3 keeps the pen, route cue, and landing mark inside the playable course boundary. All copy, CTA, disclosure, and official identity remain inside crop-safe margins and are readable at phone size. Slides 1, 3, and 4 remain byte-identical to the BRD-044 review scope.
 
 ## Review and release gates
 
-Brand review BRD-044: **Needs revision** for exact creative commit `e2efa47290a8782a3759c6491cd12e6aed4c0536` and the six SHA-256 fingerprints recorded above.
-
-The distinct field-guide system, hook, CTA, factual scoring copy, official unchanged Flickline identity, exact Playfair Display / DM Sans typography, approved palette and paper treatment, crop safety, disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass. Slide 2 does not yet substantiate its literal tee-box claim: the visible red oval is a deterministic overlay, while the underlying founder-owned course crop does not show a recognizable printed tee box around the pen. Revise only slide 2 so the complete upright pen, tip, and shadow are clearly inside a recognizable printed tee box from approved founder-owned course art. Do not use an added outline as a substitute for the printed course feature. Preserve slides 1, 3, and 4 and the approved treatment; re-export slide 2 and the review sheet, update source, alt text, QA wording, and fingerprints, reset Brand review to `Pending`, and return the exact revised package.
+Brand re-review is **Pending** for the exact corrective commit and fingerprints recorded above. The BRD-044 correction changes only slide 2 and the review sheet: it removes the added red oval, shifts the founder-owned course crop to reveal the full printed tee box, and places the complete upright pen, tip, and shadow inside that printed feature. Slides 1, 3, and 4 remain byte-identical. Any further creative or export change requires another Brand review.
 
 Approval is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until Brand is Approved, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
