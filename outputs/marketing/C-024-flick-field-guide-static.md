@@ -1,6 +1,6 @@
 # C-024 — Flick field guide
 
-Status: Brand review Pending; founder publication approval Pending
+Status: Brand review Needs revision (BRD-044); founder publication approval Pending
 
 ## Purpose
 
@@ -60,4 +60,8 @@ All four exports are exactly 1080 × 1350 px; the review sheet is 2280 × 2830 p
 
 ## Review and release gates
 
-Brand review is `Pending` for the exact exports, caption, slide copy, CTA, disclosure, source, provenance, commit, and fingerprints. Approval is not legal clearance. Do not schedule or publish until Brand is Approved, founder publication approval is Approved to publish, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
+Brand review BRD-044: **Needs revision** for exact creative commit `e2efa47290a8782a3759c6491cd12e6aed4c0536` and the six SHA-256 fingerprints recorded above.
+
+The distinct field-guide system, hook, CTA, factual scoring copy, official unchanged Flickline identity, exact Playfair Display / DM Sans typography, approved palette and paper treatment, crop safety, disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass. Slide 2 does not yet substantiate its literal tee-box claim: the visible red oval is a deterministic overlay, while the underlying founder-owned course crop does not show a recognizable printed tee box around the pen. Revise only slide 2 so the complete upright pen, tip, and shadow are clearly inside a recognizable printed tee box from approved founder-owned course art. Do not use an added outline as a substitute for the printed course feature. Preserve slides 1, 3, and 4 and the approved treatment; re-export slide 2 and the review sheet, update source, alt text, QA wording, and fingerprints, reset Brand review to `Pending`, and return the exact revised package.
+
+Approval is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until Brand is Approved, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
