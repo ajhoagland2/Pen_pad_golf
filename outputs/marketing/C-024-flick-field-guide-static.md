@@ -1,6 +1,6 @@
 # C-024 — Flick field guide
 
-Status: Brand re-review Pending after BRD-044 correction; founder publication approval Pending
+Status: Brand Approved (BRD-045); founder publication approval Pending
 
 ## Purpose
 
@@ -60,6 +60,6 @@ All four exports are exactly 1080 × 1350 px; the review sheet is 2280 × 2830 p
 
 ## Review and release gates
 
-Brand re-review is **Pending** for the exact corrective commit and fingerprints recorded above. The BRD-044 correction changes only slide 2 and the review sheet: it removes the added red oval, shifts the founder-owned course crop to reveal the full printed tee box, and places the complete upright pen, tip, and shadow inside that printed feature. Slides 1, 3, and 4 remain byte-identical. Any further creative or export change requires another Brand review.
+Brand re-review BRD-045: **Approved** for exact creative commit `2aea0590321edc769f380cc59f2bb7eb579f6723` and the six SHA-256 fingerprints recorded above. The BRD-044 correction passes: slide 2 removes the added red oval, reveals the full printed tee box in the founder-owned Course 07 art, and keeps the complete upright pen, tip, and shadow inside that printed feature. Slides 1, 3, and 4 remain byte-identical. The field-guide hook and narrative, CTA, factual gameplay and scoring, unchanged official Flickline identity, exact Playfair Display / DM Sans typography, approved palette and paper treatment, crop safety, disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass. Any further creative or export change requires another Brand review.
 
 Approval is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until Brand is Approved, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
