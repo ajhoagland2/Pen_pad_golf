@@ -1,6 +1,6 @@
 # C-030 — This page is the course
 
-Status: Brand review Needs revision; founder publication approval Pending
+Status: Brand re-review Pending; founder publication approval Pending
 
 ## Purpose
 
@@ -54,7 +54,7 @@ Four cream, deep-green, rust, and muted-gold Pen Pad Golf carousel slides styled
 - Slide 2: `9eb8693b0596593a58d71ffc26f5b22edb9b5252ce78b5ab228e54c15280d7a4`
 - Slide 3: `6903da78983623b9cdb70d6d46ad5c5418ba5cebf8b31eda253dcf13953d6e5b`
 - Slide 4: `053a8f1fbf7a3db17054a7e64d69c14ab004a3dcd0919c0b1d3520fe63471528`
-- Review sheet: `1f4817d15a25127da8e0590ffe19820da0658c6060654503b67edc8773dc3b63`
+- Review sheet: `c0b505ed3ec0503649250426c4b48c0ceef4ad893353fe9a741f40377ec03ccb`
 - Versioned source art: `5a3ae4ee73904968f274f69922ba223b27057e29a3700b6a5dcc86f86abdecb0`
 
 ## Visual QA
@@ -63,6 +63,6 @@ All four exports are exactly 1080 × 1350 px; the review sheet is exactly 2280 �
 
 ## Review and release gates
 
-Brand review is **Needs revision** under BRD-053 for exact creative commit `d6ac7c37a77064991783b427e98e526812c18d66`. The four static slides, copy, CTA, product depiction, official identity, typography, palette, crop safety, disclosure, originality, owned-source provenance, dimensions, and source-label exclusion pass. The evidence package does not: this file, the workbook handoff, issue #36, and PR #37 record review-sheet SHA-256 `1f4817d15a25127da8e0590ffe19820da0658c6060654503b67edc8773dc3b63`, while the committed Git LFS object and verified local review sheet are `c0b505ed3ec0503649250426c4b48c0ceef4ad893353fe9a741f40377ec03ccb`.
+BRD-053 requested an evidence-only correction for exact creative commit `d6ac7c37a77064991783b427e98e526812c18d66`: replace the previously recorded review-sheet fingerprint with the verified Git LFS object and local file SHA-256 `c0b505ed3ec0503649250426c4b48c0ceef4ad893353fe9a741f40377ec03ccb`. The package record, workbook handoff, issue #36, and PR #37 have been corrected without rerendering or changing any creative/export bytes. The four static slides, copy, CTA, product depiction, official identity, typography, palette, crop safety, disclosure, originality, owned-source provenance, dimensions, source-label exclusion, and all other fingerprints remain unchanged and are returned for Brand re-review.
 
-Next action: correct the review-sheet fingerprint everywhere it is cited and return the same creative commit for Brand re-review. Do not rerender or change any creative/export bytes; all other verified fingerprints remain unchanged. Do not schedule or publish until Brand approves the corrected exact scope, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA. Approval is not legal clearance; retain provenance and obtain formal trademark clearance before commercial adoption.
+Brand re-review is **Pending** for the corrected evidence scope and unchanged exact creative commit `d6ac7c37a77064991783b427e98e526812c18d66`. Do not schedule or publish until Brand approves that scope, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA. Approval is not legal clearance; retain provenance and obtain formal trademark clearance before commercial adoption.
