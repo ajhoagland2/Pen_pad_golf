@@ -1,6 +1,6 @@
 # C-028 — Page scorecard
 
-Status: Ready for Brand review; founder publication approval Pending
+Status: Brand Approved under BRD-051; founder publication approval Pending
 
 ## Purpose
 
@@ -62,6 +62,6 @@ All four exports are exactly 1080 × 1350 px; the review sheet is exactly 2280 �
 
 ## Review and release gates
 
-Brand review is **Pending** for the exact commit and fingerprints above. Any creative or export change requires another Brand review.
+Brand review is **Approved** under BRD-051 for exact creative commit `b40d596304f1706fe5d869d71af68bd0e07c06ca` and the six fingerprints above. The distinct page-scorecard system, hook, CTA, factual gameplay and lowest-score rule, complete upright pen inside the printed tee box, fairway landing mark and illustrative route cue, source flag and hole, unchanged official Flickline identity, exact Playfair Display / DM Sans typography, approved natural palette and paper treatment, crop-safe copy, in-development disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass. Any creative or export change requires another Brand review.
 
 Approval is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until Brand is Approved, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
