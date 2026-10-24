@@ -1,0 +1,63 @@
+# C-025 — Tee box to flag
+
+Status: Brand Approved under BRD-048 for exact corrective commit `653782a2040bbdf7dacabae992913e5e185b1537`; founder publication approval Pending
+
+## Purpose
+
+Create a distinct three-slide Instagram map carousel that makes the course's two literal landmarks—the printed tee box and the hole—immediately legible using founder-owned Course 08 classic art and unchanged Flickline identity. The composition stays within approved gameplay and scoring language and adds no product, availability, price, player-count, penalty, or performance claim.
+
+## Instagram-ready caption
+
+From tee box to flag. Start in the tee box, stand the pen upright, and flick toward the hole. Mark each landing as one stroke, then continue from the new mark. Lowest score wins.
+
+Save the map and see how to play. Pen Pad Golf is in development.
+
+## Slide copy
+
+1. From tee box to flag. Two landmarks frame every flick toward the hole.
+2. Start in the tee box. Stand the pen upright. Flick toward the hole.
+3. Keep moving toward the hole. Mark each landing as one stroke. Lowest score wins.
+
+CTA: Save the map and see how to play.
+
+## Alt text
+
+Three cream, ink, and forest-green Pen Pad Golf carousel slides styled as a tactile course map over founder-owned Course 08 watercolor art. The first introduces the journey from tee box to flag. The second shows a complete upright navy pen inside the printed tee box. The third focuses on the course's flag and hole while explaining that each landing counts as one stroke and lowest score wins. The unchanged official Flickline marks, crop-safe CTA, and in-development disclosure are visible.
+
+## CTA, tracking, and targets
+
+- CTA: Save the map and see how to play.
+- Publication URL: `https://ajhoagland2.github.io/PPG_site/?utm_source=instagram&utm_medium=organic_social&utm_campaign=ppg_tee_box_to_flag_static_20261023&utm_content=carousel#how-to-play`
+- Unique campaign: `ppg_tee_box_to_flag_static_20261023`
+- Traffic target: 200 verified website sessions.
+- Lead target: 8 verified feedback-intent conversions.
+- Target traffic-to-lead rate: 4%.
+- Actual sessions, leads, qualified leads, orders, spend, and Actual Real Revenue remain zero until supported by evidence.
+
+## Evidence
+
+- GitHub issue: `https://github.com/ajhoagland2/Pen_pad_golf/issues/26`
+- Exact exports: `outputs/marketing/C-025-tee-box-to-flag-static-1.png` through `-3.png`
+- Review sheet: `outputs/marketing/C-025-tee-box-to-flag-static-review-sheet.png`
+- Deterministic source: `outputs/marketing/C-025-tee-box-to-flag-source.html`
+- Provenance: `outputs/marketing/C-025-tee-box-to-flag-static-provenance.md`
+- Founder-owned art: `outputs/marketing/assets/c025-course-08-classic.jpg`
+- Renderer: `scripts/render-c025-tee-box-to-flag-static.mjs`
+
+## Exact SHA-256 fingerprints
+
+- Slide 1: `6c2473399fab4b1d19acee16e441105e1d3d17494ad9e354cd26f448dbe35953`
+- Slide 2: `246f071ce3c6e9b656c68e84d8e07f019b74b379062c1b6129c5b910446fcc8a`
+- Slide 3: `77dae17f14be2a5dc80c5f1566d9ada2e3b86b840e996ceb18030fe82c66d771`
+- Review sheet: `009df756766b8a73fa3bb37a32d2220a940696e59c59f4e7ed9142772e50a02a`
+- Versioned source art: `59b0222efeed52e27ddd420efc9dc2ea62d253593b2fdbac4520853f13f15977`
+
+## Visual QA
+
+All three exports are exactly 1080 × 1350 px; the review sheet is 2280 × 2830 px. The source hole, par, yardage, and footer labels are excluded. The BRD-046 slide-2 correction enlarges the actual printed tee box and replaces the rejected 18 × 70 px peg-like treatment with a visibly complete upright navy pen: capped barrel, gold clip and band, textured grip, conical tip, and shadow are recognizable at phone size, with the pen and tip visibly contained by the printed tee-box area. Slides 1 and 3 remain byte-identical. Slide 3 clearly shows the source flag and hole. All copy, CTA, disclosure, and official identity remain inside crop-safe margins and are readable at phone size.
+
+## Review and release gates
+
+BRD-046 marked exact creative commit `84bf43c97087a59479518353f8422a5065d3c30f` **Needs revision** because slide 2's 18 × 70 px pen body read as a peg. BRD-048 approves the correction at exact commit `653782a2040bbdf7dacabae992913e5e185b1537` and the five fingerprints above. Slide 2 now shows a recognizable complete upright pen, including capped barrel, gold clip and band, textured grip, conical tip, and shadow, inside the enlarged printed tee box. Slides 1 and 3 remain byte-identical. Hook, CTA, factual gameplay and scoring, unchanged official Flickline identity, exact typography and palette, crop safety, disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass. Any creative or export change requires another Brand review.
+
+Approval is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until Brand is Approved, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
