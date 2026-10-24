@@ -1,6 +1,6 @@
 # C-027 — Desk round
 
-Status: Ready for Brand review; founder publication approval Pending
+Status: Brand Approved under BRD-050 for exact creative commit `7168b1790fdf2a2c0ef59fa190b162c28738927f`; founder publication approval Pending
 
 ## Purpose
 
@@ -62,6 +62,6 @@ All four exports are exactly 1080 × 1350 px; the review sheet is exactly 2280 �
 
 ## Review and release gates
 
-Brand review is **Pending** for the exact commit and fingerprints above. Any creative or export change requires another Brand review.
+BRD-050 approves exact creative commit `7168b1790fdf2a2c0ef59fa190b162c28738927f` and the six fingerprints above. The distinct warm-desktop system, hook, CTA, factual gameplay and scoring, complete upright pen inside the printed tee box, fairway landing mark and illustrative route cue, unchanged official Flickline identity, exact Playfair Display and DM Sans typography, approved natural palette, paper texture, crop safety, disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass. Any creative or export change requires another Brand review.
 
 Approval is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until Brand is Approved, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
