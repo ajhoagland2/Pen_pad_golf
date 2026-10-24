@@ -1,6 +1,6 @@
 # C-026 — Mark the next landing
 
-Status: Brand re-review Pending after BRD-047 correction; founder publication approval Pending
+Status: Brand Approved under BRD-049 for exact corrective commit `7d263745f1445cd7f7831da94a589ddead2737b3`; founder publication approval Pending
 
 ## Purpose
 
@@ -62,6 +62,6 @@ All four exports are exactly 1080 × 1350 px; the review sheet is exactly 2280 �
 
 ## Review and release gates
 
-BRD-047 marked exact creative commit `d38ef9b80d84efcd5014a90c5656f6811757f258` **Needs revision** because slide 2's 18 × 74 px pen body read as a peg. That slide-2-only issue is now corrected while slides 1, 3, and 4 remain byte-identical. Brand re-review is **Pending** for the exact corrective commit and refreshed fingerprints above. Any creative or export change requires another Brand review.
+BRD-047 marked exact creative commit `d38ef9b80d84efcd5014a90c5656f6811757f258` **Needs revision** because slide 2's 18 × 74 px pen body read as a peg. BRD-049 approves the correction at exact commit `7d263745f1445cd7f7831da94a589ddead2737b3` and the six fingerprints above. Slide 2 now shows a recognizable complete upright pen, including capped barrel, gold clip and band, textured grip, conical tip, and shadow, fully inside the enlarged printed tee box. Slides 1, 3, and 4 remain byte-identical. Hook, A/B prompt narrative, CTA, factual gameplay and scoring, unchanged official Flickline identity, exact typography and palette, crop safety, disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass. Any creative or export change requires another Brand review.
 
 Approval is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until Brand is Approved, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA.
