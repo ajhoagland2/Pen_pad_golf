@@ -1,6 +1,6 @@
 # C-030 — This page is the course
 
-Status: Brand review Pending; founder publication approval Pending
+Status: Brand review Needs revision; founder publication approval Pending
 
 ## Purpose
 
@@ -63,4 +63,6 @@ All four exports are exactly 1080 × 1350 px; the review sheet is exactly 2280 �
 
 ## Review and release gates
 
-Brand review is **Pending** for the exact creative commit and fingerprints to be recorded after final QA. Do not schedule or publish until Brand approves that exact scope, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA. Any creative or export change requires another Brand review.
+Brand review is **Needs revision** under BRD-053 for exact creative commit `d6ac7c37a77064991783b427e98e526812c18d66`. The four static slides, copy, CTA, product depiction, official identity, typography, palette, crop safety, disclosure, originality, owned-source provenance, dimensions, and source-label exclusion pass. The evidence package does not: this file, the workbook handoff, issue #36, and PR #37 record review-sheet SHA-256 `1f4817d15a25127da8e0590ffe19820da0658c6060654503b67edc8773dc3b63`, while the committed Git LFS object and verified local review sheet are `c0b505ed3ec0503649250426c4b48c0ceef4ad893353fe9a741f40377ec03ccb`.
+
+Next action: correct the review-sheet fingerprint everywhere it is cited and return the same creative commit for Brand re-review. Do not rerender or change any creative/export bytes; all other verified fingerprints remain unchanged. Do not schedule or publish until Brand approves the corrected exact scope, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA. Approval is not legal clearance; retain provenance and obtain formal trademark clearance before commercial adoption.
