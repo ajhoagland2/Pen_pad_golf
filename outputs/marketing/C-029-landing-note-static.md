@@ -1,6 +1,6 @@
 # C-029 — Landing note
 
-Status: Brand review Pending; founder publication approval Pending
+Status: Brand review Approved; founder publication approval Pending
 
 ## Purpose
 
@@ -63,6 +63,6 @@ All four exports are exactly 1080 × 1350 px; the review sheet is exactly 2280 �
 
 ## Review and release gates
 
-Brand review is **Pending** for the exact exports and fingerprints above. Request review of the distinct landing-note system, hook, CTA, factual gameplay and lowest-score rule, resting pen and landing mark on playable fairway, complete upright pen at the new mark, source flag and hole, unchanged official Flickline identity, exact Playfair Display / DM Sans typography, approved natural palette and paper treatment, crop-safe copy, in-development disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion.
+Brand review is **Approved** under `BRD-052` for exact creative commit `4b632940cdc5a99693f4702aa1f053d114ca8bce` and the six fingerprints above. The distinct landing-note system, hook, CTA, factual gameplay and lowest-score rule, complete resting pen and numbered landing mark on playable fairway, complete upright pen at the new mark, source flag and hole, unchanged official Flickline identity, exact Playfair Display / DM Sans typography, approved natural palette and paper treatment, crop-safe copy, in-development disclosure, caption, alt text, deterministic source, originality, founder-owned provenance, dimensions, and source-label exclusion pass.
 
-Approval is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until Brand is Approved, founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA. Any creative or export change requires another Brand review.
+Approval applies only to the exact creative commit and fingerprints recorded above and is not legal clearance. Retain provenance and obtain formal trademark clearance before commercial adoption. Do not schedule or publish until founder publication approval is `Approved to publish`, the founder confirms Instagram readiness, feedback and analytics work end to end, and the exact exports pass current in-app crop QA. Any creative or export change requires another Brand review.
